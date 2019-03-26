@@ -8,7 +8,7 @@
 from scrapy import signals
 
 
-class CraiglistSpiderMiddleware(object):
+class GetsubdomainsSpiderMiddleware(object):
     # Not all methods need to be defined. If a method is not defined,
     # scrapy acts as if the spider middleware does not modify the
     # passed objects.
@@ -56,7 +56,7 @@ class CraiglistSpiderMiddleware(object):
         spider.logger.info('Spider opened: %s' % spider.name)
 
 
-class CraiglistDownloaderMiddleware(object):
+class GetsubdomainsDownloaderMiddleware(object):
     # Not all methods need to be defined. If a method is not defined,
     # scrapy acts as if the downloader middleware does not modify the
     # passed objects.

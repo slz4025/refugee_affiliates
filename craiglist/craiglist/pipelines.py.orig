@@ -14,7 +14,7 @@ from models import Apts, db_connect, create_deals_table
 from sqlalchemy import update
 import csv
 
-class TutorialPipeline(object):
+class CraiglistPipeline(object):
     
     def __init__(self):
         """
