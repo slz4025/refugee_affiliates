@@ -9,28 +9,9 @@ import scrapy
 from scrapy.spiders import CrawlSpider, Rule
 from scrapy.linkextractors import LinkExtractor
 from lxml import html
+from items import CraigslistItem
 #import pandas as pd
 #scrapy crawl craig -o items.csv -t csv
-
-#Item class with listed fields to scrape
-class CraigslistItem(scrapy.Item):
-    date = scrapy.Field()
-    title = scrapy.Field()
-    link = scrapy.Field()
-    price = scrapy.Field()
-    #area = scrapy.Field()
-    beds = scrapy.Field()
-    size = scrapy.Field()
-    craigId = scrapy.Field()
-    numPic = scrapy.Field()
-    postDate = scrapy.Field()
-    updateDate = scrapy.Field()
-    baths = scrapy.Field()
-    latitude = scrapy.Field()
-    longitude = scrapy.Field()
-    contentLen = scrapy.Field()
-    reposts = scrapy.Field()
-    zipcode = scrapy.Field()
 
 # ideal if this can come from some csv
 
@@ -47,7 +28,6 @@ class MySpider(CrawlSpider): #scrapy.Spider):
     def parse_page(self, response):
     #def parse(self,response):
         base = response.request.url
-        print("Visited: ", base)
 
         #find all postings
         postings = response.xpath(".//p[@class='result-info']") # pure selectors
@@ -100,7 +80,6 @@ class MySpider(CrawlSpider): #scrapy.Spider):
                     item["size"] = int(size.extract()) 
                 if isinstance(size, (list,)):
                     item["size"] = int(size[0].extract())
-                print("size",size)
             else:
                 bnb = a.xpath("b/text()")
                 for b in bnb:

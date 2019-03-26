@@ -13,7 +13,7 @@ BOT_NAME = 'craiglist'
 SPIDER_MODULES = ['craiglist.spiders']
 NEWSPIDER_MODULE = 'craiglist.spiders'
 #TODO: changed below from list to dict to satisfy current scrapy
-ITEM_PIPELINES = {} #{'craiglist.pipelines.TutorialPipeline' : 0}
+ITEM_PIPELINES = {} #{'craiglist.pipelines.CraiglistPipeline' : 0}
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'craigslist (+http://www.yourdomain.com)'
