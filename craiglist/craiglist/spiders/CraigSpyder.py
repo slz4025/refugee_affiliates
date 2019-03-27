@@ -12,7 +12,19 @@ class MySpider(CrawlSpider):
     name = "craig"
     allowed_domains = ["craigslist.org"]
     sub_domains = list(pd.read_csv("subs.csv")["subdomain"])
-    start_urls = ("https://" + sd + ".craigslist.org/search/see/apa?" for sd in sub_domains) # iterator
+    start_urls = ("https://" + sd + ".craigslist.org" for sd in sub_domains) # iterator
+    #start_urls = ("https://" + sd + ".craigslist.org/search/see/apa?" for sd in sub_domains) # iterator
+
+    def parse(self, response):
+        base = response.request.url
+        print("base", base)
+        if (base == "https://boston.craigslist.org"): # /i/apartments
+            url = "https://boston.craigslist.org/search/aap"
+        elif (base == "https://newyork.craigslist.org"):
+            url = "https://newyork.craigslist.org/search/aap"
+        else:
+            url = base + response.xpath(".//a[@data-cat='apa']/@href")[0].extract() 
+        yield scrapy.Request(url, callback=self.parse_page)
 
     # https://stackoverflow.com/questions/32624033/scrapy-crawl-with-next-page
     rules = (Rule(LinkExtractor(allow=(), restrict_xpaths=('//a[@class="button next"]',)), callback="parse_page", follow= True),)
@@ -75,7 +87,14 @@ class MySpider(CrawlSpider):
                     if (suffix == "BR"):
                         item["beds"] = int(bnb[0].extract()[:-2]) 
                     elif (suffix == "Ba"):
-                        item["baths"] = float(bnb[1].extract()[:-2])
+                        baths = bnb[1].extract()[:-2]
+                        if baths == "shared":
+                            baths = 1 # share with other people
+                        elif baths == "split":
+                            baths = 1 # toilet/sink in one, shower/sink in another
+                        elif baths == "9+":
+                            baths = 9   # lower bound, conservative
+                        item["baths"] = float(baths)
 
         item["contentLen"] = len(response.xpath("//section[@id='postingbody']").xpath("text()").extract())
         postinginfo = response.xpath("//p[@class = 'postinginfo reveal']").xpath("time/@datetime")
