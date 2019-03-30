@@ -11,32 +11,70 @@ import pandas as pd
 class MySpider(CrawlSpider): 
     name = "craig"
     allowed_domains = ["craigslist.org"]
-    sub_domains = list(pd.read_csv("subs.csv")["subdomain"])
-    start_urls = ("https://" + sd + ".craigslist.org" for sd in sub_domains) # iterator
-    #start_urls = ("https://" + sd + ".craigslist.org/search/see/apa?" for sd in sub_domains) # iterator
+    sdf = pd.read_csv("subs.csv")
+    global state_map, region_map
+    state_map = pd.Series(sdf.state.values,index=sdf.subdomain).to_dict()
+    region_map = pd.Series(sdf.region.values,index=sdf.subdomain).to_dict()
+
+    sub_domains = list(set(list(sdf["subdomain"]))) # ["miami","boston","newyork"] 
+    start_urls =  ("https://" + sd + ".craigslist.org" for sd in sub_domains) # iterator
 
     def parse(self, response):
         base = response.request.url
-        print("base", base)
+        print("base",base)
+
+        ###### begin find subregions
+        path_subs = ".//nav[@id='topban'].//ul[@class='sublinks'].//a/@href"
+        subs = response.xpath(".//nav[@id='topban']")
+        subs = subs.xpath(".//ul[@class='sublinks']")
+        subs = subs.xpath(".//a/@href")
+
+        ###### end find subregions
+        # root
         if (base == "https://boston.craigslist.org"): # /i/apartments
-            url = "https://boston.craigslist.org/search/aap"
+            url = "https://boston.craigslist.org/search/aap" # normal
         elif (base == "https://newyork.craigslist.org"):
-            url = "https://newyork.craigslist.org/search/aap"
+            url = "https://newyork.craigslist.org/search/aap" # normal
+        elif (base == "https://miami.craigslist.org/"):
+            url = base + "d/apts-housing-for-rent/search/apa" # normal
         else:
-            url = base + response.xpath(".//a[@data-cat='apa']/@href")[0].extract() 
+            url = base + "/d/apts-housing-for-rent/search/apa" # normal
         yield scrapy.Request(url, callback=self.parse_page)
+        print("url", url)
+
+        # subs
+        for s in subs:
+            sub = s.extract()
+            if (base == "https://boston.craigslist.org"): # /i/apartments
+                url = "https://boston.craigslist.org/search"+sub+"aap" # sub
+            elif (base == "https://newyork.craigslist.org"):
+                url = "https://newyork.craigslist.org/search"+sub+"aap" # sub
+            elif (base == "https://miami.craigslist.org/"):
+                url = base + "d/apts-housing-for-rent/search"+sub+"apa" # normal
+            else:
+                url = base + "/d/apts-housing-for-rent/search"+sub+"apa" # sub
+                # url = base + response.xpath(".//a[@data-cat='apa']/@href")[0].extract() 
+            print("url", url)
+            yield scrapy.Request(url, callback=self.parse_page)
+            
 
     # https://stackoverflow.com/questions/32624033/scrapy-crawl-with-next-page
     rules = (Rule(LinkExtractor(allow=(), restrict_xpaths=('//a[@class="button next"]',)), callback="parse_page", follow= True),)
 
     def parse_page(self, response):
         base = response.request.url
-
+        subd = base[8:base.find('.')] # get rid of https://
+        state = state_map[subd] # subd is not unique for miami
+        region = region_map[subd]
+        
         #find all postings
         postings = response.xpath(".//p[@class='result-info']") # pure selectors
         #loop through the postings
-        for i in range(0, len(postings)-1):
+        for i in range(0, len(postings)): #-1):
             item = CraigslistItem()
+            item["state"] = state
+            item["region"] = region
+            item["subdomain"] = subd
             ex1 = postings[i].xpath("a/@data-id")
             ex2 = postings[i].xpath("time/text()")
             ex3 = postings[i].xpath("a/text()")

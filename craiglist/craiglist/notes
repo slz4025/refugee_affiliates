@@ -1,2 +1,4 @@
 Some of the Florida locations incorrectly mapped to iami, so changed it to
 miami.
+Also, got rid of all miami references except the Miami / Dade.
+changed len(postings)-1 to len(postings)

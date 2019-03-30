@@ -35,6 +35,9 @@ class Apts(DeclarativeBase):
     latitude = Column('latitude', Float(Precision=8), nullable=False)
     longitude = Column('longitude', Float(Precision=8), nullable=False)
     zipcode = Column('zipcode', String, nullable=False)
+    state = Column('state', String, nullable=False)
+    region = Column('city', String, nullable=False)
+    subdomain = Column('subdomain', String, nullable=False)
 
 def create_deals_table(engine):
     DeclarativeBase.metadata.create_all(engine)
