@@ -32,6 +32,9 @@ class CraigslistItem(Item):
     contentLen = Field()
     reposts = Field()
     zipcode = Field()
+    state = Field()
+    region = Field()
+    subdomain = Field()
     def __repr__(self):
         # don't print anything:
         # https://stackoverflow.com/questions/14390945/suppress-scrapy-item-printed-in-logs-after-pipeline/16303725
