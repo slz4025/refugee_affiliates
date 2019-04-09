@@ -1,0 +1,898 @@
+1554612494866	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.O8QSc4N8z2Me"
+Error: no DISPLAY environment variable specified
+1554612516964	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.tVsTAbdQrZKT"
+Error: no DISPLAY environment variable specified
+1554612747033	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.VQ8NGU2fshyH"
+Error: no DISPLAY environment variable specified
+1554612832379	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.o2lxGvBzrlmR"
+Error: no DISPLAY environment variable specified
+1554619253128	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.L1f8KS2axoml"
+Error: no DISPLAY environment variable specified
+1554620464790	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.F3ql7od6NiC3"
+1554620467079	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1554620467080	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1554620467080	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+
+(firefox:1299): LIBDBUSMENU-GLIB-WARNING **: 03:01:10.878: Unable to get session bus: Error spawning command line “dbus-launch --autolaunch= --binary-syntax --close-stderr”: Child process exited with code 1
+1554620475454	Marionette	INFO	Listening on port 54859
+1554620475928	Marionette	WARN	TLS certificate errors will be ignored for this session
+1554620488549	Marionette	INFO	Stopped listening on port 54859
+1554620865981	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.IXiwkPZB57tw"
+1554620867621	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1554620867621	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1554620867622	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+
+(firefox:1593): LIBDBUSMENU-GLIB-WARNING **: 03:07:51.355: Unable to get session bus: Error spawning command line “dbus-launch --autolaunch= --binary-syntax --close-stderr”: Child process exited with code 1
+1554620874090	Marionette	INFO	Listening on port 55238
+1554620874403	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:190:13
+
+1554620899485	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.eL5uM6aKEKBY"
+1554620901217	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1554620901218	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1554620901218	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+
+(firefox:1861): LIBDBUSMENU-GLIB-WARNING **: 03:08:24.942: Unable to get session bus: Error spawning command line “dbus-launch --autolaunch= --binary-syntax --close-stderr”: Child process exited with code 1
+1554620908038	Marionette	INFO	Listening on port 55301
+1554620908389	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:190:13
+
+1554621188746	Marionette	INFO	Stopped listening on port 55238
+1554621189886	Marionette	INFO	Stopped listening on port 55301
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1554621192221	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.z4ebzEHKV7uR"
+1554621192888	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1554621192889	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1554621192889	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+
+(firefox:2161): LIBDBUSMENU-GLIB-WARNING **: 03:13:14.420: Unable to get session bus: Error spawning command line “dbus-launch --autolaunch= --binary-syntax --close-stderr”: Child process exited with code 1
+1554621195715	Marionette	INFO	Listening on port 55662
+1554621196143	Marionette	WARN	TLS certificate errors will be ignored for this session
+1554621197229	Marionette	INFO	Stopped listening on port 55662
+1554621253444	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.EH7EwD8YjTQo"
+1554621254110	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1554621254111	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1554621254111	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+
+(firefox:2442): LIBDBUSMENU-GLIB-WARNING **: 03:14:15.604: Unable to get session bus: Error spawning command line “dbus-launch --autolaunch= --binary-syntax --close-stderr”: Child process exited with code 1
+1554621257013	Marionette	INFO	Listening on port 55753
+1554621257425	Marionette	WARN	TLS certificate errors will be ignored for this session
+1554621260427	Marionette	INFO	Stopped listening on port 55753
+1554621265753	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.W3Ukd0hANyJE"
+1554621266412	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1554621266413	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1554621266413	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+
+(firefox:2731): LIBDBUSMENU-GLIB-WARNING **: 03:14:27.911: Unable to get session bus: Error spawning command line “dbus-launch --autolaunch= --binary-syntax --close-stderr”: Child process exited with code 1
+1554621269054	Marionette	INFO	Listening on port 55795
+1554621269172	Marionette	WARN	TLS certificate errors will be ignored for this session
+1554621272120	Marionette	INFO	Stopped listening on port 55795
+1554621346693	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.gVBwil0ngzbw"
+1554621347354	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1554621347355	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1554621347355	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+
+(firefox:3018): LIBDBUSMENU-GLIB-WARNING **: 03:15:49.119: Unable to get session bus: Error spawning command line “dbus-launch --autolaunch= --binary-syntax --close-stderr”: Child process exited with code 1
+1554621350027	Marionette	INFO	Listening on port 55895
+1554621350079	Marionette	WARN	TLS certificate errors will be ignored for this session
+1554621370823	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.Bs9UG61e8uZo"
+1554621371786	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1554621371786	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1554621371786	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+
+(firefox:3300): LIBDBUSMENU-GLIB-WARNING **: 03:16:13.272: Unable to get session bus: Error spawning command line “dbus-launch --autolaunch= --binary-syntax --close-stderr”: Child process exited with code 1
+1554621374613	Marionette	INFO	Listening on port 55947
+1554621374702	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:190:13
+
+1554621399160	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.0eCuTlTKPqsg"
+1554621399833	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1554621399834	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1554621399834	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+
+(firefox:3567): LIBDBUSMENU-GLIB-WARNING **: 03:16:41.616: Unable to get session bus: Error spawning command line “dbus-launch --autolaunch= --binary-syntax --close-stderr”: Child process exited with code 1
+1554621402721	Marionette	INFO	Listening on port 56002
+1554621403030	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:190:13
+
+[Parent 3300, Gecko_IOThread] WARNING: pipe error: Broken pipe: file /build/firefox-QFhmDU/firefox-66.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 726
+1554657519606	Marionette	INFO	Stopped listening on port 55947
+[Parent 3018, Gecko_IOThread] WARNING: pipe error: Broken pipe: file /build/firefox-QFhmDU/firefox-66.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 726
+[Parent 3018, Gecko_IOThread] WARNING: pipe error: Broken pipe: file /build/firefox-QFhmDU/firefox-66.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 726
+1554657520861	Marionette	INFO	Stopped listening on port 55895
+[Parent 3567, Gecko_IOThread] WARNING: pipe error: Broken pipe: file /build/firefox-QFhmDU/firefox-66.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 726
+[Parent 3567, Gecko_IOThread] WARNING: pipe error: Broken pipe: file /build/firefox-QFhmDU/firefox-66.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 726
+[Parent 3567, Gecko_IOThread] WARNING: pipe error: Broken pipe: file /build/firefox-QFhmDU/firefox-66.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 726
+1554657523829	Marionette	INFO	Stopped listening on port 56002
+1554657585369	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.ZOoiDwTEjAx2"
+1554657586123	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1554657586123	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1554657586124	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+
+(firefox:4165): LIBDBUSMENU-GLIB-WARNING **: 13:19:47.594: Unable to get session bus: Error spawning command line “dbus-launch --autolaunch= --binary-syntax --close-stderr”: Child process exited with code 1
+1554657588872	Marionette	INFO	Listening on port 56886
+1554657589245	Marionette	WARN	TLS certificate errors will be ignored for this session
+1554657592558	Marionette	INFO	Stopped listening on port 56886
+1554657612106	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.7ywSmbxLqixN"
+1554657612853	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1554657612854	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1554657612854	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+
+(firefox:4469): LIBDBUSMENU-GLIB-WARNING **: 13:20:14.481: Unable to get session bus: Error spawning command line “dbus-launch --autolaunch= --binary-syntax --close-stderr”: Child process exited with code 1
+1554657615574	Marionette	INFO	Listening on port 56942
+1554657616024	Marionette	WARN	TLS certificate errors will be ignored for this session
+1554657618840	Marionette	INFO	Stopped listening on port 56942
+1554657696726	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.s9bOGCuPyhRr"
+1554657697379	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1554657697380	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1554657697380	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+
+(firefox:4740): LIBDBUSMENU-GLIB-WARNING **: 13:21:38.686: Unable to get session bus: Error spawning command line “dbus-launch --autolaunch= --binary-syntax --close-stderr”: Child process exited with code 1
+1554657699812	Marionette	INFO	Listening on port 57041
+1554657700016	Marionette	WARN	TLS certificate errors will be ignored for this session
+1554657702925	Marionette	INFO	Stopped listening on port 57041
+1554658149740	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.0knKg3Ngktkl"
+1554658150358	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1554658150359	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1554658150359	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+
+(firefox:5018): LIBDBUSMENU-GLIB-WARNING **: 13:29:11.703: Unable to get session bus: Error spawning command line “dbus-launch --autolaunch= --binary-syntax --close-stderr”: Child process exited with code 1
+1554658152661	Marionette	INFO	Listening on port 57450
+1554658153014	Marionette	WARN	TLS certificate errors will be ignored for this session
+1554658156318	Marionette	INFO	Stopped listening on port 57450
+1554658169077	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.NW4oO3saNi6E"
+1554658169672	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1554658169672	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1554658169672	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+
+(firefox:5297): LIBDBUSMENU-GLIB-WARNING **: 13:29:30.995: Unable to get session bus: Error spawning command line “dbus-launch --autolaunch= --binary-syntax --close-stderr”: Child process exited with code 1
+1554658172037	Marionette	INFO	Listening on port 57499
+1554658172359	Marionette	WARN	TLS certificate errors will be ignored for this session
+1554658175264	Marionette	INFO	Stopped listening on port 57499
+[Parent 5297, Gecko_IOThread] WARNING: pipe error: Broken pipe: file /build/firefox-QFhmDU/firefox-66.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 726
+1554658861917	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.FdFc6FrRoAQi"
+1554658862597	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1554658862597	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1554658862597	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+
+(firefox:5577): LIBDBUSMENU-GLIB-WARNING **: 13:41:04.094: Unable to get session bus: Error spawning command line “dbus-launch --autolaunch= --binary-syntax --close-stderr”: Child process exited with code 1
+1554658865279	Marionette	INFO	Listening on port 58113
+1554658865357	Marionette	WARN	TLS certificate errors will be ignored for this session
+1554658897907	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.CVAKpgsHdyFb"
+1554658898600	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1554658898600	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1554658898600	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+
+(firefox:5848): LIBDBUSMENU-GLIB-WARNING **: 13:41:40.066: Unable to get session bus: Error spawning command line “dbus-launch --autolaunch= --binary-syntax --close-stderr”: Child process exited with code 1
+1554658901450	Marionette	INFO	Listening on port 58174
+1554658901807	Marionette	WARN	TLS certificate errors will be ignored for this session
+1554658926253	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.ybPez0YiLWSV"
+1554658926922	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1554658926922	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1554658926922	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+
+(firefox:6146): LIBDBUSMENU-GLIB-WARNING **: 13:42:08.408: Unable to get session bus: Error spawning command line “dbus-launch --autolaunch= --binary-syntax --close-stderr”: Child process exited with code 1
+1554658929898	Marionette	INFO	Listening on port 58234
+1554658930140	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:190:13
+
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:190:13
+
+1554658953161	Marionette	INFO	Stopped listening on port 58174
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:190:13
+
+1554658985836	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.HewAJHlfGZQR"
+1554658986564	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1554658986564	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1554658986565	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+
+(firefox:6438): LIBDBUSMENU-GLIB-WARNING **: 13:43:08.487: Unable to get session bus: Error spawning command line “dbus-launch --autolaunch= --binary-syntax --close-stderr”: Child process exited with code 1
+1554658989953	Marionette	INFO	Listening on port 58317
+1554658990191	Marionette	WARN	TLS certificate errors will be ignored for this session
+1554658994043	Marionette	INFO	Stopped listening on port 58317
+1554659115031	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.TtbgjPzci8ca"
+1554659116108	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1554659116108	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1554659116109	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+
+(firefox:6729): LIBDBUSMENU-GLIB-WARNING **: 13:45:17.980: Unable to get session bus: Error spawning command line “dbus-launch --autolaunch= --binary-syntax --close-stderr”: Child process exited with code 1
+1554659119059	Marionette	INFO	Listening on port 64231
+1554659119403	Marionette	WARN	TLS certificate errors will be ignored for this session
+1554659123735	Marionette	INFO	Stopped listening on port 64231
+1554659149759	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.VIWa5E3ME1dS"
+1554659150488	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1554659150488	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1554659150488	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+
+(firefox:7035): LIBDBUSMENU-GLIB-WARNING **: 13:45:52.010: Unable to get session bus: Error spawning command line “dbus-launch --autolaunch= --binary-syntax --close-stderr”: Child process exited with code 1
+1554659153454	Marionette	INFO	Listening on port 64295
+1554659153624	Marionette	WARN	TLS certificate errors will be ignored for this session
+1554659163106	Marionette	INFO	Stopped listening on port 64295
+1554659197095	Marionette	INFO	Stopped listening on port 58234
+1554659204279	Marionette	INFO	Stopped listening on port 58113
+1554659237455	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.6lFk2nk7yRsQ"
+1554659238145	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1554659238146	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1554659238146	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+
+(firefox:7330): LIBDBUSMENU-GLIB-WARNING **: 13:47:19.624: Unable to get session bus: Error spawning command line “dbus-launch --autolaunch= --binary-syntax --close-stderr”: Child process exited with code 1
+1554659241010	Marionette	INFO	Listening on port 64400
+1554659241348	Marionette	WARN	TLS certificate errors will be ignored for this session
+1554659276632	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.3UC7QKlMzuZD"
+1554659277295	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1554659277295	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1554659277295	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+
+(firefox:7599): LIBDBUSMENU-GLIB-WARNING **: 13:47:58.857: Unable to get session bus: Error spawning command line “dbus-launch --autolaunch= --binary-syntax --close-stderr”: Child process exited with code 1
+1554659280320	Marionette	INFO	Listening on port 64468
+1554659280519	Marionette	WARN	TLS certificate errors will be ignored for this session
+1554659292017	Marionette	INFO	Stopped listening on port 64400
+1554659295072	Marionette	INFO	Stopped listening on port 64468
+1554659325315	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.pd8z8ueOBbY2"
+1554659325981	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1554659325981	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1554659325981	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+
+(firefox:7883): LIBDBUSMENU-GLIB-WARNING **: 13:48:47.511: Unable to get session bus: Error spawning command line “dbus-launch --autolaunch= --binary-syntax --close-stderr”: Child process exited with code 1
+1554659328624	Marionette	INFO	Listening on port 64538
+1554659328726	Marionette	WARN	TLS certificate errors will be ignored for this session
+1554659333771	Marionette	INFO	Stopped listening on port 64538
+1554659569752	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.SFo9QI5SBMlj"
+1554659570436	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1554659570436	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1554659570436	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+
+(firefox:8170): LIBDBUSMENU-GLIB-WARNING **: 13:52:51.994: Unable to get session bus: Error spawning command line “dbus-launch --autolaunch= --binary-syntax --close-stderr”: Child process exited with code 1
+1554659573222	Marionette	INFO	Listening on port 64764
+1554659573655	Marionette	WARN	TLS certificate errors will be ignored for this session
+1554659623686	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.8nHR63Bo6aIN"
+1554659624351	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1554659624351	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1554659624352	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+
+(firefox:8465): LIBDBUSMENU-GLIB-WARNING **: 13:53:45.765: Unable to get session bus: Error spawning command line “dbus-launch --autolaunch= --binary-syntax --close-stderr”: Child process exited with code 1
+1554659627048	Marionette	INFO	Listening on port 64841
+1554659627565	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:190:13
+
+1554659650512	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.c87VsJGmEmLT"
+1554659651190	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1554659651191	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1554659651191	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+
+(firefox:8747): LIBDBUSMENU-GLIB-WARNING **: 13:54:12.721: Unable to get session bus: Error spawning command line “dbus-launch --autolaunch= --binary-syntax --close-stderr”: Child process exited with code 1
+1554659653908	Marionette	INFO	Listening on port 64897
+1554659654382	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:190:13
+
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:190:13
+
+1554659792644	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.ev9qKppZFbqN"
+1554659793296	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1554659793296	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1554659793297	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+
+(firefox:9052): LIBDBUSMENU-GLIB-WARNING **: 13:56:34.792: Unable to get session bus: Error spawning command line “dbus-launch --autolaunch= --binary-syntax --close-stderr”: Child process exited with code 1
+1554659796067	Marionette	INFO	Listening on port 65088
+1554659796526	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:190:13
+
+1554659824407	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.PmKZBAuRkJpE"
+1554659825109	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1554659825110	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1554659825110	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+
+(firefox:9335): LIBDBUSMENU-GLIB-WARNING **: 13:57:06.484: Unable to get session bus: Error spawning command line “dbus-launch --autolaunch= --binary-syntax --close-stderr”: Child process exited with code 1
+1554659827951	Marionette	INFO	Listening on port 65148
+1554659828309	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:190:13
+
+1554659986531	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.eVQWzZqav5TN"
+1554659987216	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1554659987217	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1554659987217	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+
+(firefox:9644): LIBDBUSMENU-GLIB-WARNING **: 13:59:48.773: Unable to get session bus: Error spawning command line “dbus-launch --autolaunch= --binary-syntax --close-stderr”: Child process exited with code 1
+1554659990448	Marionette	INFO	Listening on port 65321
+1554659990920	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:190:13
+
+1554660066940	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.7aOExTqjSE2H"
+1554660067620	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1554660067621	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1554660067621	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+
+(firefox:9943): LIBDBUSMENU-GLIB-WARNING **: 14:01:09.280: Unable to get session bus: Error spawning command line “dbus-launch --autolaunch= --binary-syntax --close-stderr”: Child process exited with code 1
+1554660070518	Marionette	INFO	Listening on port 65430
+1554660070818	Marionette	WARN	TLS certificate errors will be ignored for this session
+1554660077290	Marionette	INFO	Stopped listening on port 64764
+[Parent 9943, Gecko_IOThread] WARNING: pipe error: Broken pipe: file /build/firefox-QFhmDU/firefox-66.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 726
+1554660080285	Marionette	INFO	Stopped listening on port 65430
+1554660083188	Marionette	INFO	Stopped listening on port 64841
+1554660084174	Marionette	INFO	Stopped listening on port 64897
+1554660085124	Marionette	INFO	Stopped listening on port 65088
+1554660086062	Marionette	INFO	Stopped listening on port 65148
+1554660087243	Marionette	INFO	Stopped listening on port 65321
+1554660089236	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.NOg0ufwJ1l2T"
+1554660089923	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1554660089924	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1554660089924	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+
+(firefox:10249): LIBDBUSMENU-GLIB-WARNING **: 14:01:31.437: Unable to get session bus: Error spawning command line “dbus-launch --autolaunch= --binary-syntax --close-stderr”: Child process exited with code 1
+1554660092633	Marionette	INFO	Listening on port 65481
+1554660093122	Marionette	WARN	TLS certificate errors will be ignored for this session
+1554660138341	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.vYFIBYQwCz6m"
+1554660139029	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1554660139030	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1554660139030	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+
+(firefox:10535): LIBDBUSMENU-GLIB-WARNING **: 14:02:21.143: Unable to get session bus: Error spawning command line “dbus-launch --autolaunch= --binary-syntax --close-stderr”: Child process exited with code 1
+1554660142473	Marionette	INFO	Listening on port 49170
+1554660142795	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:190:13
+
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:190:13
+
+1554660224258	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.0C45d0EjzIGJ"
+1554660224936	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1554660224936	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1554660224936	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+
+(firefox:10833): LIBDBUSMENU-GLIB-WARNING **: 14:03:46.492: Unable to get session bus: Error spawning command line “dbus-launch --autolaunch= --binary-syntax --close-stderr”: Child process exited with code 1
+1554660227697	Marionette	INFO	Listening on port 49281
+1554660228141	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:190:13
+
+1554660300588	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.POUHNZNARUQE"
+1554660301302	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1554660301302	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1554660301302	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+
+(firefox:11115): LIBDBUSMENU-GLIB-WARNING **: 14:05:02.897: Unable to get session bus: Error spawning command line “dbus-launch --autolaunch= --binary-syntax --close-stderr”: Child process exited with code 1
+1554660304216	Marionette	INFO	Listening on port 49376
+1554660304474	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:190:13
+
+1554660440193	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.bG8916PmpM9V"
+1554660440917	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1554660440918	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1554660440918	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+
+(firefox:11415): LIBDBUSMENU-GLIB-WARNING **: 14:07:22.495: Unable to get session bus: Error spawning command line “dbus-launch --autolaunch= --binary-syntax --close-stderr”: Child process exited with code 1
+1554660443723	Marionette	INFO	Listening on port 49798
+1554660444058	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:190:13
+
+1554660798813	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.6P6urBLxPjld"
+1554660799480	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1554660799480	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1554660799481	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+
+(firefox:11769): LIBDBUSMENU-GLIB-WARNING **: 14:13:20.954: Unable to get session bus: Error spawning command line “dbus-launch --autolaunch= --binary-syntax --close-stderr”: Child process exited with code 1
+1554660802550	Marionette	INFO	Listening on port 50153
+1554660802692	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:190:13
+
+1554660850279	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.LpGLLcY7z2ZD"
+1554660850957	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1554660850958	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1554660850958	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+
+(firefox:12064): LIBDBUSMENU-GLIB-WARNING **: 14:14:12.414: Unable to get session bus: Error spawning command line “dbus-launch --autolaunch= --binary-syntax --close-stderr”: Child process exited with code 1
+1554660853841	Marionette	INFO	Listening on port 50235
+1554660854152	Marionette	WARN	TLS certificate errors will be ignored for this session
+1554660861796	Marionette	INFO	Stopped listening on port 65481
+1554660863038	Marionette	INFO	Stopped listening on port 49170
+[Parent 10833, Gecko_IOThread] WARNING: pipe error: Broken pipe: file /build/firefox-QFhmDU/firefox-66.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 726
+1554660864047	Marionette	INFO	Stopped listening on port 49281
+1554660864941	Marionette	INFO	Stopped listening on port 49376
+1554660866010	Marionette	INFO	Stopped listening on port 49798
+1554660866961	Marionette	INFO	Stopped listening on port 50153
+1554660868138	Marionette	INFO	Stopped listening on port 50235
+1554660910861	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.GYmgSSHf7oJg"
+1554660911712	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1554660911712	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1554660911713	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+
+(firefox:12372): LIBDBUSMENU-GLIB-WARNING **: 14:15:13.212: Unable to get session bus: Error spawning command line “dbus-launch --autolaunch= --binary-syntax --close-stderr”: Child process exited with code 1
+1554660914681	Marionette	INFO	Listening on port 50322
+1554660914767	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:190:13
+
+1554661002341	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.psHVytQ0N5JX"
+1554661003052	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1554661003052	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1554661003052	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+
+(firefox:12646): LIBDBUSMENU-GLIB-WARNING **: 14:16:44.645: Unable to get session bus: Error spawning command line “dbus-launch --autolaunch= --binary-syntax --close-stderr”: Child process exited with code 1
+1554661005929	Marionette	INFO	Listening on port 50435
+1554661006226	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:190:13
+
+1554661040415	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.fi5dYPYvtCbe"
+1554661041180	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1554661041181	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1554661041181	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+
+(firefox:12920): LIBDBUSMENU-GLIB-WARNING **: 14:17:22.843: Unable to get session bus: Error spawning command line “dbus-launch --autolaunch= --binary-syntax --close-stderr”: Child process exited with code 1
+1554661044522	Marionette	INFO	Listening on port 50503
+1554661044748	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:190:13
+
+1554661130093	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.Z6YkCcRW0mmP"
+1554661130785	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1554661130786	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1554661130786	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+
+(firefox:13234): LIBDBUSMENU-GLIB-WARNING **: 14:18:52.223: Unable to get session bus: Error spawning command line “dbus-launch --autolaunch= --binary-syntax --close-stderr”: Child process exited with code 1
+1554661133927	Marionette	INFO	Listening on port 50616
+1554661134073	Marionette	WARN	TLS certificate errors will be ignored for this session
+1554661136560	Marionette	INFO	Stopped listening on port 50322
+1554661140924	Marionette	INFO	Stopped listening on port 50435
+1554661141807	Marionette	INFO	Stopped listening on port 50503
+1554661148136	Marionette	INFO	Stopped listening on port 50616
+1554661169994	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.tk8ySeseL8np"
+1554661170662	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1554661170663	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1554661170663	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+
+(firefox:13537): LIBDBUSMENU-GLIB-WARNING **: 14:19:32.196: Unable to get session bus: Error spawning command line “dbus-launch --autolaunch= --binary-syntax --close-stderr”: Child process exited with code 1
+1554661173365	Marionette	INFO	Listening on port 50678
+1554661173871	Marionette	WARN	TLS certificate errors will be ignored for this session
+1554661189247	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.M1ZtsdeD7Ufi"
+1554661189940	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1554661189940	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1554661189940	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+
+(firefox:13810): LIBDBUSMENU-GLIB-WARNING **: 14:19:51.590: Unable to get session bus: Error spawning command line “dbus-launch --autolaunch= --binary-syntax --close-stderr”: Child process exited with code 1
+1554661192850	Marionette	INFO	Listening on port 50728
+1554661193111	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:190:13
+
+1554661197902	Marionette	INFO	Stopped listening on port 50728
+1554661209138	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.tqNqucZVoiwu"
+1554661209872	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1554661209872	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1554661209872	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+
+(firefox:14104): LIBDBUSMENU-GLIB-WARNING **: 14:20:11.801: Unable to get session bus: Error spawning command line “dbus-launch --autolaunch= --binary-syntax --close-stderr”: Child process exited with code 1
+1554661212989	Marionette	INFO	Listening on port 50779
+1554661213015	Marionette	WARN	TLS certificate errors will be ignored for this session
+1554661217383	Marionette	INFO	Stopped listening on port 50779
+1554661228096	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.AFbxhCeQwejF"
+1554661228782	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1554661228782	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1554661228782	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+
+(firefox:14397): LIBDBUSMENU-GLIB-WARNING **: 14:20:30.351: Unable to get session bus: Error spawning command line “dbus-launch --autolaunch= --binary-syntax --close-stderr”: Child process exited with code 1
+1554661231707	Marionette	INFO	Listening on port 50826
+1554661231971	Marionette	WARN	TLS certificate errors will be ignored for this session
+1554661238081	Marionette	INFO	Stopped listening on port 50826
+1554661259768	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.fj1hNRrd6jya"
+1554661260443	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1554661260444	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1554661260444	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+
+(firefox:14683): LIBDBUSMENU-GLIB-WARNING **: 14:21:01.994: Unable to get session bus: Error spawning command line “dbus-launch --autolaunch= --binary-syntax --close-stderr”: Child process exited with code 1
+1554661263357	Marionette	INFO	Listening on port 50885
+1554661263669	Marionette	WARN	TLS certificate errors will be ignored for this session
+1554661273524	Marionette	INFO	Stopped listening on port 50885
+1554661285565	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.RhP5fS8tPqtR"
+1554661286302	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1554661286302	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1554661286302	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+
+(firefox:14967): LIBDBUSMENU-GLIB-WARNING **: 14:21:27.867: Unable to get session bus: Error spawning command line “dbus-launch --autolaunch= --binary-syntax --close-stderr”: Child process exited with code 1
+1554661289151	Marionette	INFO	Listening on port 50944
+1554661289466	Marionette	WARN	TLS certificate errors will be ignored for this session
+1554661293738	Marionette	INFO	Stopped listening on port 50944
+1554661460913	Marionette	INFO	Stopped listening on port 50678
+1554661466368	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.C6SdnHmiPG3B"
+1554661467115	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1554661467116	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1554661467116	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+
+(firefox:15261): LIBDBUSMENU-GLIB-WARNING **: 14:24:28.645: Unable to get session bus: Error spawning command line “dbus-launch --autolaunch= --binary-syntax --close-stderr”: Child process exited with code 1
+1554661469838	Marionette	INFO	Listening on port 51119
+1554661470285	Marionette	WARN	TLS certificate errors will be ignored for this session
+1554661477019	Marionette	INFO	Stopped listening on port 51119
+1554661705077	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.6Y7XU28lZjtH"
+1554661705753	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1554661705754	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1554661705754	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+
+(firefox:15551): LIBDBUSMENU-GLIB-WARNING **: 14:28:27.143: Unable to get session bus: Error spawning command line “dbus-launch --autolaunch= --binary-syntax --close-stderr”: Child process exited with code 1
+1554661708381	Marionette	INFO	Listening on port 51366
+1554661708437	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:190:13
+
+1554661750104	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.jY8BXQmDPcX5"
+1554661750774	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1554661750774	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1554661750775	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+
+(firefox:15824): LIBDBUSMENU-GLIB-WARNING **: 14:29:12.311: Unable to get session bus: Error spawning command line “dbus-launch --autolaunch= --binary-syntax --close-stderr”: Child process exited with code 1
+1554661753600	Marionette	INFO	Listening on port 51440
+1554661753987	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:190:13
+
+1554661808617	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.TnLWGmyCPMMt"
+1554661809274	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1554661809275	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1554661809275	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+
+(firefox:16101): LIBDBUSMENU-GLIB-WARNING **: 14:30:10.695: Unable to get session bus: Error spawning command line “dbus-launch --autolaunch= --binary-syntax --close-stderr”: Child process exited with code 1
+1554661812413	Marionette	INFO	Listening on port 51522
+1554661812563	Marionette	WARN	TLS certificate errors will be ignored for this session
+1554661862102	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.6QQprPrs6pQD"
+1554661862775	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1554661862798	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1554661862798	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:190:13
+
+
+(firefox:16399): LIBDBUSMENU-GLIB-WARNING **: 14:31:04.310: Unable to get session bus: Error spawning command line “dbus-launch --autolaunch= --binary-syntax --close-stderr”: Child process exited with code 1
+1554661865499	Marionette	INFO	Listening on port 51600
+1554661865997	Marionette	WARN	TLS certificate errors will be ignored for this session
+1554661924015	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.KPqu9JSWkXg1"
+1554661924704	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1554661924705	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1554661924705	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+
+(firefox:16702): LIBDBUSMENU-GLIB-WARNING **: 14:32:06.215: Unable to get session bus: Error spawning command line “dbus-launch --autolaunch= --binary-syntax --close-stderr”: Child process exited with code 1
+1554661927492	Marionette	INFO	Listening on port 51689
+1554661927908	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:190:13
+
+1554661948361	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.Uw72YSWeV0yK"
+1554661949038	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1554661949039	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1554661949039	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+
+(firefox:16989): LIBDBUSMENU-GLIB-WARNING **: 14:32:30.645: Unable to get session bus: Error spawning command line “dbus-launch --autolaunch= --binary-syntax --close-stderr”: Child process exited with code 1
+1554661952101	Marionette	INFO	Listening on port 51744
+1554661952248	Marionette	WARN	TLS certificate errors will be ignored for this session
+1554661956581	Marionette	INFO	Stopped listening on port 51744
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:190:13
+
+1554661982836	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.eUq1qGsNDAtx"
+1554661983500	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1554661983500	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1554661983500	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+
+(firefox:17264): LIBDBUSMENU-GLIB-WARNING **: 14:33:05.012: Unable to get session bus: Error spawning command line “dbus-launch --autolaunch= --binary-syntax --close-stderr”: Child process exited with code 1
+1554661986771	Marionette	INFO	Listening on port 51805
+1554661987208	Marionette	WARN	TLS certificate errors will be ignored for this session
+1554661991836	Marionette	INFO	Stopped listening on port 51805
+[Parent 16702, Gecko_IOThread] WARNING: pipe error: Broken pipe: file /build/firefox-QFhmDU/firefox-66.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 726
+1554662018735	Marionette	INFO	Stopped listening on port 51689
+[Parent 15551, Gecko_IOThread] WARNING: pipe error: Broken pipe: file /build/firefox-QFhmDU/firefox-66.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 726
+1554662021173	Marionette	INFO	Stopped listening on port 51366
+[Parent 15824, Gecko_IOThread] WARNING: pipe error: Broken pipe: file /build/firefox-QFhmDU/firefox-66.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 726
+1554662021993	Marionette	INFO	Stopped listening on port 51440
+1554662022747	Marionette	INFO	Stopped listening on port 51522
+[Parent 16399, Gecko_IOThread] WARNING: pipe error: Broken pipe: file /build/firefox-QFhmDU/firefox-66.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 726
+1554662023449	Marionette	INFO	Stopped listening on port 51600
+1554662181118	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.Sqbyi07KdiuW"
+1554662181808	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1554662181808	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1554662181808	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+
+(firefox:17575): LIBDBUSMENU-GLIB-WARNING **: 14:36:23.399: Unable to get session bus: Error spawning command line “dbus-launch --autolaunch= --binary-syntax --close-stderr”: Child process exited with code 1
+1554662184881	Marionette	INFO	Listening on port 52000
+1554662185009	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:190:13
+
+1554662819026	Marionette	INFO	Stopped listening on port 52000
+1554662819858	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.Hw12cJJSNXSL"
+1554662820639	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1554662820640	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1554662820640	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+
+(firefox:17885): LIBDBUSMENU-GLIB-WARNING **: 14:47:02.602: Unable to get session bus: Error spawning command line “dbus-launch --autolaunch= --binary-syntax --close-stderr”: Child process exited with code 1
+1554662824183	Marionette	INFO	Listening on port 52574
+1554662824266	Marionette	WARN	TLS certificate errors will be ignored for this session
+1554662831139	Marionette	INFO	Stopped listening on port 52574
+1554663209634	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.XSC5wNMhkRnE"
+1554663210297	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1554663210297	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1554663210297	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+
+(firefox:18165): LIBDBUSMENU-GLIB-WARNING **: 14:53:31.826: Unable to get session bus: Error spawning command line “dbus-launch --autolaunch= --binary-syntax --close-stderr”: Child process exited with code 1
+1554663213112	Marionette	INFO	Listening on port 52980
+1554663213540	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:190:13
+
+1554663291997	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.foFSvb2AA6pF"
+1554663292691	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1554663292692	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1554663292692	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+
+(firefox:18451): LIBDBUSMENU-GLIB-WARNING **: 14:54:54.433: Unable to get session bus: Error spawning command line “dbus-launch --autolaunch= --binary-syntax --close-stderr”: Child process exited with code 1
+1554663295471	Marionette	INFO	Listening on port 53081
+1554663295892	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:190:13
+
+1554663440179	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.EDidA64XkvMH"
+1554663440859	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1554663440859	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1554663440859	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+
+(firefox:18730): LIBDBUSMENU-GLIB-WARNING **: 14:57:22.395: Unable to get session bus: Error spawning command line “dbus-launch --autolaunch= --binary-syntax --close-stderr”: Child process exited with code 1
+1554663443696	Marionette	INFO	Listening on port 53236
+1554663444077	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 18451, Gecko_IOThread] WARNING: pipe error: Broken pipe: file /build/firefox-QFhmDU/firefox-66.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 726
+1554663464533	Marionette	INFO	Stopped listening on port 53081
+1554663466809	Marionette	INFO	Stopped listening on port 52980
+1554663467996	Marionette	INFO	Stopped listening on port 53236
+1554663495372	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.RJKJDKLs3LNX"
+1554663496059	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1554663496060	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1554663496060	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+
+(firefox:19030): LIBDBUSMENU-GLIB-WARNING **: 14:58:17.748: Unable to get session bus: Error spawning command line “dbus-launch --autolaunch= --binary-syntax --close-stderr”: Child process exited with code 1
+1554663499171	Marionette	INFO	Listening on port 53313
+1554663499278	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:190:13
+
+1554663529569	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.dnbBYuN3hXSE"
+1554663530261	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1554663530262	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1554663530262	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+
+(firefox:19317): LIBDBUSMENU-GLIB-WARNING **: 14:58:51.731: Unable to get session bus: Error spawning command line “dbus-launch --autolaunch= --binary-syntax --close-stderr”: Child process exited with code 1
+1554663533071	Marionette	INFO	Listening on port 53373
+1554663533431	Marionette	WARN	TLS certificate errors will be ignored for this session
+1554663562234	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.g04N961ApRnU"
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:190:13
+
+1554663562906	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1554663562906	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1554663562906	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1554663582554	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.Ai42vSw1KuqH"
+1554663583204	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1554663583204	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1554663583204	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+
+(firefox:19704): LIBDBUSMENU-GLIB-WARNING **: 14:59:44.748: Unable to get session bus: Error spawning command line “dbus-launch --autolaunch= --binary-syntax --close-stderr”: Child process exited with code 1
+1554663585941	Marionette	INFO	Listening on port 53460
+1554663586418	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:190:13
+
+1554663633165	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.PNMYUjgSBnhZ"
+1554663633848	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1554663633848	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1554663633848	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+
+(firefox:19990): LIBDBUSMENU-GLIB-WARNING **: 15:00:35.411: Unable to get session bus: Error spawning command line “dbus-launch --autolaunch= --binary-syntax --close-stderr”: Child process exited with code 1
+1554663636575	Marionette	INFO	Listening on port 53537
+1554663637059	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:190:13
+
+1554663669613	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.OyU9MeKxrRhc"
+1554663670287	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1554663670287	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1554663670287	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+
+(firefox:20270): LIBDBUSMENU-GLIB-WARNING **: 15:01:11.881: Unable to get session bus: Error spawning command line “dbus-launch --autolaunch= --binary-syntax --close-stderr”: Child process exited with code 1
+1554663673131	Marionette	INFO	Listening on port 53603
+1554663673499	Marionette	WARN	TLS certificate errors will be ignored for this session
+1554663680982	Marionette	INFO	Stopped listening on port 53603
+[Parent 19990, Gecko_IOThread] WARNING: pipe error: Broken pipe: file /build/firefox-QFhmDU/firefox-66.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 726
+1554663710507	Marionette	INFO	Stopped listening on port 53537
+1554663710897	Marionette	INFO	Stopped listening on port 53460
+1554663712010	Marionette	INFO	Stopped listening on port 53373
+[Parent 19030, Gecko_IOThread] WARNING: pipe error: Broken pipe: file /build/firefox-QFhmDU/firefox-66.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 726
+1554663712640	Marionette	INFO	Stopped listening on port 53313
