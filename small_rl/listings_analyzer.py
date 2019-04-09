@@ -26,14 +26,15 @@ converters = {'rent':to_float,
               'sqft':to_float, 
               'longitude':to_float, 
               'latitude':to_float}
+'''
+print("Opening filtered data")
 reg_rent = pd.read_csv('data/usa-filt.csv', converters=converters) 
-print("Opened filtered data")
 
 def city_tops(df):
     ext = df[['longitude','latitude','region']].values.tolist()
     ll = [e[0:2] for e in ext]
     X = np.array(ll)
-    clustering = MeanShift(bandwidth=2).fit(X)
+    clustering = MeanShift().fit(X) # bandwidth=2
     identifier = df.iloc[0]['subdomain'] # unique key of group
     labels = [identifier + "_" + str(l) for l in clustering.labels_]
     df['cluster_label'] = labels
@@ -42,21 +43,25 @@ def city_tops(df):
     return regs
 
 # sort by state then region
+print("Grouping rows that are from same state and region")
 reg_rent.set_index('pid')
 reg_rent = reg_rent.sort_values(['state', 'region'])
 groups = reg_rent.groupby(['state', 'region'])
 state_regions = [groups.get_group(g) for g in groups.groups]
-print("Grouped rows that are from same state and region")
+print("Dividing groups by subregion")
 reg_srs = [city_tops(sr) for sr in state_regions]
-print("Divided groups by subregion")
 reg_rents = [r for rs in reg_srs for r in rs] # flatten
 reg_rents = pd.concat(reg_rents) # turn into one df
+print("Unique subregions: ",reg_rents['cluster_label'].nunique())
 
 # save
+print("Saving subregion data")
 with open('data/usa-subreg.csv', 'w') as f:
   reg_rents.to_csv(f, header=True)
+'''
 
 # open
+print("Opening subregion data")
 reg_rents = pd.read_csv('data/usa-subreg.csv', converters=converters) 
 groups = reg_rents.groupby(['cluster_label'])
 reg_rents = [groups.get_group(g) for g in groups.groups]
@@ -97,13 +102,14 @@ def region_fix(region):
         return region
 
 pop_name = 'data/ACS_17_5YR_DP05_with_ann.csv'
-population_df = pd.read_csv(pop_name, encoding='iso-8859-1') #, header=[0,1])
+#population_df = pd.read_csv(pop_name, encoding='iso-8859-1') #, header=[0,1])
+locs = pd.read_csv("data/locations.csv")
 
 begin = time.time()
-count = 0
+count = 1379
 
 print("Starting to reverse_geocode and extract geoid")
-for reg_rent in reg_rents:
+for reg_rent in reg_rents[1378:]: #TODO
   print(count)
   # only apply geocoding on first
   row = reg_rent.iloc[0] # first
@@ -124,7 +130,7 @@ for reg_rent in reg_rents:
   reg_rent['geoid'] = [""] * num
   # put in geoid
   if not ("County" in region):
-      first_pass = population_df[population_df['GEO.display-label'].str.match(region)]
+      first_pass = locs[locs['GEO.display-label'].str.match(region)]
       second_pass = first_pass[first_pass['GEO.display-label'].str.contains(state)]
       try:
           geoid = second_pass.iloc[0]['GEO.id2']
@@ -143,11 +149,11 @@ for reg_rent in reg_rents:
       reg_rent.to_csv(f, header=False)
   count += 1
 
-
 end = time.time()
 print("Time: ", end-begin)
 
-# should probably reopen csv here
+# repoen csv
+print("Opening and preprocessing geoid-file")
 converters = {'rent':to_float, 
               'bedrooms':to_float, 
               'sqft':to_float, 
@@ -165,6 +171,9 @@ geoid_remove = np.array(geoid_is_null).nonzero()[0].tolist()
 rows_remove = list(set(region2_remove + state2_remove + geoid_remove))
 with_loc.drop(rows_remove, inplace=True)
 
+print("Number of rows with geoid: ", with_loc['pid'].count())
+print("Number of unique geoids: ", with_loc['geoid'].nunique())
+
 # using minimum wage from 2018, for each state (and federal if no state min. wage)
 # to be conservative, we look at the lowest min wage
 
@@ -176,17 +185,35 @@ min_wages_map = pd.Series(min_wage_pd.min_wage.values, \
 def get_min_wage(row):
     return min_wages_map[row['state2']]
 
-per_inc_housing = 1 # percentage of monthly income for housing
-mw_upper_threshold = 1 # factor on minimum wage to serve as upper limit
-fact = per_inc_housing * mw_upper_threshold
+print("Calculating affordability statistic")
+per_inc_housing = 0.5 # up-in-the-air, percentage of monthly income for housing
+mw_upper_threshold = 1.75 # $12 wage (Leslie) vs. $7.25 min wage (in Pittsburgh) 
+tax_consideration = 1 # amount left after tax
+fact = per_inc_housing * mw_upper_threshold * tax_consideration
 with_loc['min_wage'] = with_loc.apply(get_min_wage, axis=1)
 # 8 hours a day, 20 workdays as a standard lower limit
 with_loc['mw_monthly_amount'] = 8*20*with_loc['min_wage']
-with_loc['below_threshold'] = with_loc['rent'] <= fact * with_loc['mw_monthly_amount']
-aff = with_loc[with_loc['below_threshold']==True]
-af_count = aff['below_threshold'].count()
-af_ratio = float(af_count) / float(with_loc['below_threshold'].count())
-print("Number of Affordable:\t{}\nRatio of Affordable:\t{}\n".format(af_count, af_ratio))
+with_loc['affordable'] = with_loc['rent'] <= fact * with_loc['mw_monthly_amount']
+#aff = with_loc[with_loc['below_threshold']==True]
+#af_count = aff['below_threshold'].count()
+#af_ratio = float(af_count) / float(with_loc['below_threshold'].count())
+#print("Number of Affordable:\t{}\nRatio of Affordable:\t{}\n".format(af_count, af_ratio))
+
+print("Affordability by geoid group")
+# now determine for each locality, how many acc. affordable housing options there are
+locality_groups = with_loc.groupby('geoid')
+localities = [locality_groups.get_group(g) for g in locality_groups.groups]
+affordable_count = [(l['geoid'].iloc[0],sum(l['affordable'].values)) for l in localities]
+geoid_aff = pd.DataFrame(affordable_count, columns=['GEO.id2','affordable'])
+
+print("Merging dataframes")
+# left join, will definitely keep rows from locs but not nec. rows from geoid_aff
+alocs = locs.set_index('GEO.id2').join(geoid_aff.set_index('GEO.id2'))
+
+print("Saving affordable housing data by location")
+with open('data/usa-aff.csv', 'w') as f:
+  alocs.to_csv(f, header=True)
+
 
 '''
 # break out the proportion of listings below FMR, by bedrooms (agnostic to region)
