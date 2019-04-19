@@ -13,11 +13,11 @@ class MySpider(scrapy.Spider):
     allowed_domains = ["craigslist.org/"]
 
     def start_requests(self):
+        min_wage_ = pd.read_csv("minimum_wage.csv")
+        mw_map = pd.Series(min_wage_.min_wage.values,\
+                index=min_wage_.state).to_dict()
+
         urls_ = pd.read_csv("urls_filtered.csv")
-        geoids = list(urls_['p_GEO.id2'])
-        re_sts = list(urls_['p_GEO.display-label'])
-        state = list(urls_['state'])
-        region = list(urls_['region'])
 
         for i,r in urls_.iterrows():
             geoid = r['p_GEO.id2']
@@ -25,19 +25,37 @@ class MySpider(scrapy.Spider):
             state = r['state']
             region = r['region']
             url = r['url']
+            min_wage = mw_map[state]
+            per_inc_housing = 0.5 # up-in-the-air, percentage of monthly income
+            mw_upper_threshold = 1.75 # $12 wage (Leslie) vs. $7.25 min wage
+            tax_consideration = 1 # amount left after tax
+            fact = per_inc_housing * mw_upper_threshold * tax_consideration
+            up_bound = min_wage * 8 * 20 * fact # per month
+            up_bound = int(up_bound)
+            print("upperbound",up_bound)
             # apts / housing with filters
             try:
                 ind = url.find('craigslist.org/')
             except:
+                # make entry for those without craigslist
+                item = CountItem()
+                item['count'] = -1 # no count
+                item['state'] = state 
+                item['geoid'] = geoid
+                item['region'] = region
+                item['place'] = re_sts
+                item['minwage'] = min_wage
                 continue
+
             beg = url[:ind+15]
             apts = "d/apts_housing_for_rent/search/apa"
             splace = url[ind+15:] # rest
-            crit = "&sort=date&hasPic=1&bundleDuplicates=1&min_price=100&max_price=1015&min_bedrooms=1&min_bathrooms=1&availabilityMode=0&laundry=1&laundry=4&laundry=2&laundry=3&sale_date=all+dates"
+            # change upper bound
+            crit = "&sort=date&hasPic=1&bundleDuplicates=1&min_price=100&max_price={}&min_bedrooms=1&min_bathrooms=1&availabilityMode=0&laundry=1&laundry=4&laundry=2&laundry=3&sale_date=all+dates".format(up_bound)
             use_url = beg + apts + splace + crit
             print("url",use_url)
             yield scrapy.Request(use_url, meta={'state':state,'region':region, \
-                    'geoid':geoid, 'place':re_sts})
+                    'geoid':geoid, 'place':re_sts, 'minwage':min_wage})
 
     def parse(self, response):
         base = response.request.url
@@ -51,4 +69,5 @@ class MySpider(scrapy.Spider):
         item['geoid'] = response.meta['geoid']
         item['region'] = response.meta['region']
         item['place'] = response.meta['place']
+        item['minwage'] = response.meta['minwage']
         return item

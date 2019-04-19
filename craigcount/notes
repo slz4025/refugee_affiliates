@@ -1,0 +1,3 @@
+run url_getter.py
+run check.py
+run dropper.py

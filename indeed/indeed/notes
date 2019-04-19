@@ -1,1 +1,0 @@
-scrapy crawl indeed -o jobs.csv -t csv &> log

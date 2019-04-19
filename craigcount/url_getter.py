@@ -70,7 +70,6 @@ browser = execute_with_retry(lambda: webdriver.Firefox(
     firefox_binary=firefox_bin, capabilities=capabilities), 10)
 
 locs = pd.read_csv("popfiltered.csv") #"locations.csv")
-locs = locs.iloc[631:] # test
 abbr = pd.read_csv("state_abbr.csv")
 abbr = pd.Series(abbr.Abbreviation.values,index=abbr.State).to_dict()
 
@@ -78,7 +77,7 @@ abbr = pd.Series(abbr.Abbreviation.values,index=abbr.State).to_dict()
 base = "https://miami.craigslist.org/?search_distance=3.6&postal=33141"
 browser.get(base)
 breakers = ["CDP", "city", "town", "City", "village", "County", "urban",
-        "county", "municipality", "bourough"]
+        "county", "municipality", "borough"]
 
 buffer_am = 70
 inner_num = buffer_am
@@ -107,8 +106,6 @@ for it in range(number + 1):
             raw = label.split(', ')
             region_raw = raw[0].split(' ')
             region = ""
-            # TODO there are some places, such as Nashville, that are harder to
-            # extract
             for rr in region_raw:
                 if rr in breakers:
                     break

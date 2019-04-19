@@ -26,7 +26,7 @@ class MySpider(scrapy.Spider):
         return (region[:-1], state)
 
     def start_requests(self):
-        loc = pd.read_csv("locations.csv").iloc[23717:] #TODO, finish rest
+        loc = pd.read_csv("locations.csv")
         geoids = list(loc['GEO.id2'])
         re_sts = list(loc['GEO.display-label'])
         re_sts = [self.extract_loc(e) for e in re_sts]
@@ -44,12 +44,10 @@ class MySpider(scrapy.Spider):
 
     def parse(self, response):
         base = response.request.url
-        print("base",base)
         item = IndeedItem()
         count_ = response.xpath(".//div[@id='searchCount']/text()").extract()[0]
         tokens = count_.split(' ')
         count = tokens[-2]
-        print("Count: ", count)
         item['job_count'] = count
         item['state'] = response.meta['state']
         item['geoid'] = response.meta['geoid']
