@@ -26,6 +26,7 @@ aff_cities = pd.read_csv('./Affiliate-City-to-Id2.csv', names=['Place Name',
 aff_map = pd.Series(aff_cities['Place Name'].values,
     index=aff_cities['GeoID']).to_dict()
 
+# TODO include population in ranking
 
 job_features = [
     'Indeed job count normalized min_max_normalized'
@@ -77,22 +78,34 @@ transit_weight = 1
 housing_weight = 1
 education_weight = 1
 diversity_weight = 1
+
+# normalize by size of each feature-class
+
 job_sums = job_weight * city_data[city_data.columns[\
-        city_data.columns.isin(job_features)]].sum(axis=1)
+        city_data.columns.isin(job_features)]].sum(axis=1)\
+        / len(job_features)
 pos_economic_sums = pos_economic_weight * city_data[city_data.columns[\
-        city_data.columns.isin(pos_economic_features)]].sum(axis=1)
+        city_data.columns.isin(pos_economic_features)]].sum(axis=1)\
+        / len(pos_economic_features)
 neg_economic_sums = neg_economic_weight * city_data[city_data.columns[\
-        city_data.columns.isin(neg_economic_features)]].sum(axis=1)
+        city_data.columns.isin(neg_economic_features)]].sum(axis=1)\
+        / len(neg_economic_features)
 food_sums = food_weight * city_data[city_data.columns[\
-        city_data.columns.isin(food_features)]].sum(axis=1)
+        city_data.columns.isin(food_features)]].sum(axis=1)\
+        / len(food_features)
 transit_sums = transit_weight * city_data[city_data.columns[\
-        city_data.columns.isin(transit_features)]].sum(axis=1)
+        city_data.columns.isin(transit_features)]].sum(axis=1)\
+        / len(transit_features)
 housing_sums = housing_weight * city_data[city_data.columns[\
-        city_data.columns.isin(housing_features)]].sum(axis=1)
+        city_data.columns.isin(housing_features)]].sum(axis=1)\
+        / len(housing_features)
 education_sums = education_weight * city_data[city_data.columns[\
-        city_data.columns.isin(education_features)]].sum(axis=1)
+        city_data.columns.isin(education_features)]].sum(axis=1)\
+        / len(education_features)
 diversity_sums = diversity_weight * city_data[city_data.columns[\
-        city_data.columns.isin(diversity_features)]].sum(axis=1)
+        city_data.columns.isin(diversity_features)]].sum(axis=1)\
+        / len(diversity_features)
+
 city_scores = job_sums + pos_economic_sums + neg_economic_sums + food_sums + transit_sums \
     + housing_sums + education_sums + diversity_sums
 
@@ -104,3 +117,14 @@ for geoid, score in city_scores[:to_display].iteritems():
     .format(score, geoid, place_map[geoid],\
     geoid in aff_map))
 
+print()
+#print(city_data_with_names.loc[city_data_with_names['GeoID'] == 845970])
+print(city_data.loc[3420020,:])
+print("job",job_sums.loc[3420020])
+print("+ec",pos_economic_sums.loc[3420020])
+print("-ec",neg_economic_sums.loc[3420020])
+print("food",food_sums.loc[3420020])
+print("transit",transit_sums.loc[3420020])
+print("housing",housing_sums.loc[3420020])
+print("education",education_sums.loc[3420020])
+print("diversity",diversity_sums.loc[3420020])
