@@ -2,3 +2,6 @@
 /craigcount/craigcount/nationalfile.txt
 geckodriver/
 geckodriver.log
+fix_house.py
+house_counts.csv
+house_counts1.csv

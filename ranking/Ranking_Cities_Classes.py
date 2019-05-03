@@ -1,7 +1,9 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
+## 
+## Ranks cities according to normalized feature classes
+## 
 
 
 import numpy as np
@@ -39,6 +41,7 @@ pos_economic_features = [
 
 neg_economic_features = [
     'Number of people below the poverty level normalized min_max_normalized',
+    'Unemployment rate'
 ]
 
 food_features = [
@@ -70,12 +73,12 @@ diversity_features = [
 
 
 # weighing
-job_weight = 1
+job_weight = 2 # high
 pos_economic_weight = 1
 neg_economic_weight = -1
 food_weight = 1
 transit_weight = 1
-housing_weight = 1
+housing_weight = 2 # high
 education_weight = 1
 diversity_weight = 1
 
@@ -117,6 +120,7 @@ for geoid, score in city_scores[:to_display].iteritems():
     .format(score, geoid, place_map[geoid],\
     geoid in aff_map))
 
+'''
 print()
 #print(city_data_with_names.loc[city_data_with_names['GeoID'] == 845970])
 print(city_data.loc[3420020,:])
@@ -128,3 +132,4 @@ print("transit",transit_sums.loc[3420020])
 print("housing",housing_sums.loc[3420020])
 print("education",education_sums.loc[3420020])
 print("diversity",diversity_sums.loc[3420020])
+'''
