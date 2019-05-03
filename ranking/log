@@ -1,548 +1,270 @@
-Score: 0.12	GeoID: 2468700	Place Name: Rossville CDP, Maryland	Affiliate Status: False
-Job features 0.4702302292294998
-+ Economic features 0.8916076979654822
-- Economic features 0.7311390874575475
-Food features 0.6490666505896605
-Transit features 0.16971959864335343
-Housing features 0.2974708375864241
-Education features 0.12318595749768964
-Diversity features 1.7520272001085453
-Indeed job count normalized 0.027662789933635586
-Employment to population ratio percentage 0.669
-Number of people below the poverty level normalized 0.039950062421972535
-Unemployment rate 4.3
-SNAP-authorized Stores per 1000 people (2016) 0.7964351959999999
-Farmers Markets per 1000 people (2016) 0.120977498
+Score: -0.43	GeoID: 3710620	Place Name: Carrboro town, North Carolina	Affiliate Status: False
+Job features -0.23363274989403748
++ Economic features 0.8011167345895785
+- Economic features -0.4089106339717567
+Food features 0.3057288363289808
+Transit features -0.4323023501485519
+Housing features 2.4070995227305447
+Education features 2.5408057877694397
+Diversity features 0.7520924747991142
+Indeed job count normalized 0.037063367932129485
+Employment to population ratio percentage 0.7120000000000001
+Employment Rate Prediction 0.35705596402141104
+Number of people below the poverty level normalized 0.12621451253613916
+Unemployment rate percentage 0.044000000000000004
+SNAP-authorized Stores per 1000 people (2016) 0.762014545
+Farmers Markets per 1000 people (2016) 0.023890724
 Farmer Markets with SNAP per 1000 people (2016) 0.0
 Farmer Markets with WIC per 1000 people (2016) 0.0
 Farmer Markets with WIC Cash per 1000 people (2016) 0.0
 Farmer Markets with SFMNP per 1000 people (2016) 0.0
-Public transportation proportion 0.04358737287016246
-Proportion of public transit to work under 30 minutes 0.5209999999999999
-Affordable housing in market normalized 0.015112688087259346
-Craigslist affordable house count normalized 0.0
-Number of people with a bachelors degree or higher normalized 0.18069518365201392
-Simpsons diversity score 0.6037341382798886
+Public transportation proportion 0.13286014195741278
+Proportion of public transit to work under 30 minutes 0.9590000000000001
+Affordable housing in market normalized 0.016588463908242097
+Craigslist affordable house count normalized 0.07697047253424333
+Number of people with a bachelors degree or higher normalized 0.3921512867908432
+Simpsons diversity score 0.4263938935367119
 
-Score: 0.09	GeoID: 2730140	Place Name: Hopkins city, Minnesota	Affiliate Status: False
-Job features 0.8551102213465269
-+ Economic features 1.1733003204595416
-- Economic features 0.2323073430448982
-Food features 0.25449256441295637
-Transit features 0.3317932052421341
-Housing features 0.09463432021770629
-Education features 0.775658208948117
-Diversity features 1.492595412399646
-Indeed job count normalized 0.03705330186089916
-Employment to population ratio percentage 0.6940000000000001
-Number of people below the poverty level normalized 0.0646099796893012
-Unemployment rate 5.8
-SNAP-authorized Stores per 1000 people (2016) 1.259415341
+Score: -0.97	GeoID: 965230	Place Name: Rockville CDP, Connecticut	Affiliate Status: False
+Job features -0.9368401297441189
++ Economic features -0.20633449009841087
+- Economic features -0.4274625670193831
+Food features -0.46346315153859763
+Transit features -0.9718753930514819
+Housing features 0.13468324463915304
+Education features -0.42797208017672017
+Diversity features 0.621157679284123
+Indeed job count normalized 0.01905954368391764
+Employment to population ratio percentage 0.629
+Employment Rate Prediction 0.3161473326205721
+Number of people below the poverty level normalized 0.08166388425153033
+Unemployment rate percentage 0.092
+SNAP-authorized Stores per 1000 people (2016) 0.0
 Farmers Markets per 1000 people (2016) 0.0
 Farmer Markets with SNAP per 1000 people (2016) 0.0
 Farmer Markets with WIC per 1000 people (2016) 0.0
 Farmer Markets with WIC Cash per 1000 people (2016) 0.0
 Farmer Markets with SFMNP per 1000 people (2016) 0.0
-Public transportation proportion 0.05416116248348745
-Proportion of public transit to work under 30 minutes 0.5514485514485514
-Affordable housing in market normalized 0.010374924521051765
-Craigslist affordable house count normalized 0.002195751221386617
-Number of people with a bachelors degree or higher normalized 0.2431794477685678
-Simpsons diversity score 0.5577406124130955
+Public transportation proportion 0.09960522320072884
+Proportion of public transit to work under 30 minutes 0.7619999999999999
+Affordable housing in market normalized 0.02921535893155259
+Craigslist affordable house count normalized 0.0
+Number of people with a bachelors degree or higher normalized 0.10392320534223706
+Simpsons diversity score 0.40298830400270497
 
-Score: 0.08	GeoID: 2418250	Place Name: Cockeysville CDP, Maryland	Affiliate Status: False
-Job features GeoID
-2418250    0.123081
-2418250    0.123081
-Name: Job features, dtype: float64
-+ Economic features GeoID
-2418250    1.240907
-2418250    1.240907
-Name: + Economic features, dtype: float64
-- Economic features GeoID
-2418250    0.52184
-2418250    0.52184
-Name: - Economic features, dtype: float64
-Food features GeoID
-2418250    0.563649
-2418250    0.563649
-Name: Food features, dtype: float64
-Transit features GeoID
-2418250    0.62108
-2418250    0.62108
-Name: Transit features, dtype: float64
-Housing features GeoID
-2418250    0.083225
-2418250    0.083225
-Name: Housing features, dtype: float64
-Education features GeoID
-2418250    1.165208
-2418250    1.165208
-Name: Education features, dtype: float64
-Diversity features GeoID
-2418250    1.226893
-2418250    1.226893
-Name: Diversity features, dtype: float64
-Indeed job count normalized GeoID
-2418250    0.019193
-2418250    0.019193
-Name: Indeed job count normalized, dtype: float64
-Employment to population ratio percentage GeoID
-2418250    0.7
-2418250    0.7
-Name: Employment to population ratio percentage, dtype: float64
-Number of people below the poverty level normalized GeoID
-2418250    0.057434
-2418250    0.057434
-Name: Number of people below the poverty level normalized, dtype: float64
-Unemployment rate GeoID
-2418250    4.2
-2418250    4.2
-Name: Unemployment rate, dtype: float64
-SNAP-authorized Stores per 1000 people (2016) GeoID
-2418250    0.8726
-2418250    0.8726
-Name: SNAP-authorized Stores per 1000 people (2016), dtype: float64
-Farmers Markets per 1000 people (2016) GeoID
-2418250    0.097862
-2418250    0.097862
-Name: Farmers Markets per 1000 people (2016), dtype: float64
-Farmer Markets with SNAP per 1000 people (2016) GeoID
-2418250    0.0
-2418250    0.0
-Name: Farmer Markets with SNAP per 1000 people (2016), dtype: float64
-Farmer Markets with WIC per 1000 people (2016) GeoID
-2418250    0.0
-2418250    0.0
-Name: Farmer Markets with WIC per 1000 people (2016), dtype: float64
-Farmer Markets with WIC Cash per 1000 people (2016) GeoID
-2418250    0.0
-2418250    0.0
-Name: Farmer Markets with WIC Cash per 1000 people (2016), dtype: float64
-Farmer Markets with SFMNP per 1000 people (2016) GeoID
-2418250    0.0
-2418250    0.0
-Name: Farmer Markets with SFMNP per 1000 people (2016), dtype: float64
-Public transportation proportion GeoID
-2418250    0.072686
-2418250    0.072686
-Name: Public transportation proportion, dtype: float64
-Proportion of public transit to work under 30 minutes GeoID
-2418250    0.617383
-2418250    0.617383
-Name: Proportion of public transit to work under 30 minutes, dtype: float64
-Affordable housing in market normalized GeoID
-2418250    0.011496
-2418250    0.011496
-Name: Affordable housing in market normalized, dtype: float64
-Craigslist affordable house count normalized GeoID
-2418250    0.0
-2418250    0.0
-Name: Craigslist affordable house count normalized, dtype: float64
-Number of people with a bachelors degree or higher normalized GeoID
-2418250    0.280485
-2418250    0.280485
-Name: Number of people with a bachelors degree or higher normalized, dtype: float64
-Simpsons diversity score GeoID
-2418250    0.510635
-2418250    0.510635
-Name: Simpsons diversity score, dtype: float64
-
-Score: 0.08	GeoID: 2418250	Place Name: Cockeysville CDP, Maryland	Affiliate Status: False
-Job features GeoID
-2418250    0.123081
-2418250    0.123081
-Name: Job features, dtype: float64
-+ Economic features GeoID
-2418250    1.240907
-2418250    1.240907
-Name: + Economic features, dtype: float64
-- Economic features GeoID
-2418250    0.52184
-2418250    0.52184
-Name: - Economic features, dtype: float64
-Food features GeoID
-2418250    0.563649
-2418250    0.563649
-Name: Food features, dtype: float64
-Transit features GeoID
-2418250    0.62108
-2418250    0.62108
-Name: Transit features, dtype: float64
-Housing features GeoID
-2418250    0.083225
-2418250    0.083225
-Name: Housing features, dtype: float64
-Education features GeoID
-2418250    1.165208
-2418250    1.165208
-Name: Education features, dtype: float64
-Diversity features GeoID
-2418250    1.226893
-2418250    1.226893
-Name: Diversity features, dtype: float64
-Indeed job count normalized GeoID
-2418250    0.019193
-2418250    0.019193
-Name: Indeed job count normalized, dtype: float64
-Employment to population ratio percentage GeoID
-2418250    0.7
-2418250    0.7
-Name: Employment to population ratio percentage, dtype: float64
-Number of people below the poverty level normalized GeoID
-2418250    0.057434
-2418250    0.057434
-Name: Number of people below the poverty level normalized, dtype: float64
-Unemployment rate GeoID
-2418250    4.2
-2418250    4.2
-Name: Unemployment rate, dtype: float64
-SNAP-authorized Stores per 1000 people (2016) GeoID
-2418250    0.8726
-2418250    0.8726
-Name: SNAP-authorized Stores per 1000 people (2016), dtype: float64
-Farmers Markets per 1000 people (2016) GeoID
-2418250    0.097862
-2418250    0.097862
-Name: Farmers Markets per 1000 people (2016), dtype: float64
-Farmer Markets with SNAP per 1000 people (2016) GeoID
-2418250    0.0
-2418250    0.0
-Name: Farmer Markets with SNAP per 1000 people (2016), dtype: float64
-Farmer Markets with WIC per 1000 people (2016) GeoID
-2418250    0.0
-2418250    0.0
-Name: Farmer Markets with WIC per 1000 people (2016), dtype: float64
-Farmer Markets with WIC Cash per 1000 people (2016) GeoID
-2418250    0.0
-2418250    0.0
-Name: Farmer Markets with WIC Cash per 1000 people (2016), dtype: float64
-Farmer Markets with SFMNP per 1000 people (2016) GeoID
-2418250    0.0
-2418250    0.0
-Name: Farmer Markets with SFMNP per 1000 people (2016), dtype: float64
-Public transportation proportion GeoID
-2418250    0.072686
-2418250    0.072686
-Name: Public transportation proportion, dtype: float64
-Proportion of public transit to work under 30 minutes GeoID
-2418250    0.617383
-2418250    0.617383
-Name: Proportion of public transit to work under 30 minutes, dtype: float64
-Affordable housing in market normalized GeoID
-2418250    0.011496
-2418250    0.011496
-Name: Affordable housing in market normalized, dtype: float64
-Craigslist affordable house count normalized GeoID
-2418250    0.0
-2418250    0.0
-Name: Craigslist affordable house count normalized, dtype: float64
-Number of people with a bachelors degree or higher normalized GeoID
-2418250    0.280485
-2418250    0.280485
-Name: Number of people with a bachelors degree or higher normalized, dtype: float64
-Simpsons diversity score GeoID
-2418250    0.510635
-2418250    0.510635
-Name: Simpsons diversity score, dtype: float64
-
-Score: 0.04	GeoID: 1774119	Place Name: Swansea village, Illinois	Affiliate Status: False
-Job features 1.9112942964489905
-+ Economic features 0.8014660587673821
-- Economic features 0.6546654097392902
-Food features 0.37630546909872226
-Transit features 0.4391453042268497
-Housing features 0.31106295805035394
-Education features 0.6697808867383868
-Diversity features 0.03983326074923856
-Indeed job count normalized 0.06282265687486367
-Employment to population ratio percentage 0.6609999999999999
-Number of people below the poverty level normalized 0.04304515378462881
-Unemployment rate 4.6
-SNAP-authorized Stores per 1000 people (2016) 0.9318221059999999
-Farmers Markets per 1000 people (2016) 0.060936595
+Score: -0.97	GeoID: 1776935	Place Name: University Park village, Illinois	Affiliate Status: False
+Job features 3.78517043738767
++ Economic features 0.3231106498473102
+- Economic features -0.9746212377461573
+Food features -0.46346315153859763
+Transit features -0.7530736248339494
+Housing features -0.33281070809069946
+Education features -0.23246559803873973
+Diversity features -0.6705768382181371
+Indeed job count normalized 0.13995453253765275
+Employment to population ratio percentage 0.507
+Employment Rate Prediction 0.43638524522640254
+Number of people below the poverty level normalized 0.07530548451264564
+Unemployment rate percentage 0.14300000000000002
+SNAP-authorized Stores per 1000 people (2016) 0.0
+Farmers Markets per 1000 people (2016) 0.0
 Farmer Markets with SNAP per 1000 people (2016) 0.0
 Farmer Markets with WIC per 1000 people (2016) 0.0
 Farmer Markets with WIC Cash per 1000 people (2016) 0.0
 Farmer Markets with SFMNP per 1000 people (2016) 0.0
-Public transportation proportion 0.05735882614495332
-Proportion of public transit to work under 30 minutes 0.698
-Affordable housing in market normalized 0.01534210717661601
+Public transportation proportion 0.1378504672897196
+Proportion of public transit to work under 30 minutes 0.2762762762762763
+Affordable housing in market normalized 0.02117078715544189
 Craigslist affordable house count normalized 0.0
-Number of people with a bachelors degree or higher normalized 0.2330400639860394
-Simpsons diversity score 0.3001867706487036
+Number of people with a bachelors degree or higher normalized 0.12290423415743107
+Simpsons diversity score 0.17208094446812772
 
-Score: 0.03	GeoID: 4949710	Place Name: Midvale city, Utah	Affiliate Status: False
-Job features 0.3557233308773719
-+ Economic features 1.3648513037555006
-- Economic features 0.07243815819295896
-Food features 0.980829508942346
-Transit features 0.3852091806006076
-Housing features 0.5305952496160566
-Education features 0.030502141393874894
-Diversity features 0.09343785585915343
-Indeed job count normalized 0.024868988185680174
-Employment to population ratio percentage 0.711
-Number of people below the poverty level normalized 0.0909175478309405
-Unemployment rate 4.4
-SNAP-authorized Stores per 1000 people (2016) 0.9547086229999999
-Farmers Markets per 1000 people (2016) 0.15275338
+Score: -1.02	GeoID: 1757732	Place Name: Park Forest village, Illinois	Affiliate Status: False
+Job features -0.35301021388442133
++ Economic features -0.2575481402324653
+- Economic features -0.9332390190114437
+Food features 0.13174464945008107
+Transit features -1.0170287841477847
+Housing features -0.9167849620237494
+Education features -0.09633839916550768
+Diversity features 0.9660586992168598
+Indeed job count normalized 0.03400701365817645
+Employment to population ratio percentage 0.534
+Employment Rate Prediction 0.36818968121163376
+Number of people below the poverty level normalized 0.08167220376522702
+Unemployment rate percentage 0.133
+SNAP-authorized Stores per 1000 people (2016) 0.741549138
+Farmers Markets per 1000 people (2016) 0.0
 Farmer Markets with SNAP per 1000 people (2016) 0.0
 Farmer Markets with WIC per 1000 people (2016) 0.0
 Farmer Markets with WIC Cash per 1000 people (2016) 0.0
 Farmer Markets with SFMNP per 1000 people (2016) 0.0
-Public transportation proportion 0.062044931234053136
-Proportion of public transit to work under 30 minutes 0.4154154154154154
-Affordable housing in market normalized 0.012496511519737047
-Craigslist affordable house count normalized 0.010946075847313094
-Number of people with a bachelors degree or higher normalized 0.17181928121802226
-Simpsons diversity score 0.3096900946381804
+Public transportation proportion 0.12022120702091847
+Proportion of public transit to work under 30 minutes 0.21100000000000002
+Affordable housing in market normalized 0.010935769656699887
+Craigslist affordable house count normalized 0.0002768549280177187
+Number of people with a bachelors degree or higher normalized 0.1361203396087117
+Simpsons diversity score 0.4646419818555239
 
-Score: -0.03	GeoID: 2737502	Place Name: Little Canada city, Minnesota	Affiliate Status: False
-Job features 2.088435990572068
-+ Economic features 0.6324504852709465
-- Economic features 0.5793130249221847
-Food features 0.017998901798660673
-Transit features -0.03488239457988153
-Housing features 0.22871301059762167
-Education features 0.03217475114543176
-Diversity features 0.7002459246824586
-Indeed job count normalized 0.06714465652553048
-Employment to population ratio percentage 0.6459999999999999
-Number of people below the poverty level normalized 0.05290185059587249
-Unemployment rate 4.2
-SNAP-authorized Stores per 1000 people (2016) 0.795600827
-Farmers Markets per 1000 people (2016) 0.01485842
-Farmer Markets with SNAP per 1000 people (2016) 0.009455358182358488
-Farmer Markets with WIC per 1000 people (2016) 0.004052296363231135
-Farmer Markets with WIC Cash per 1000 people (2016) 0.004052296363231135
-Farmer Markets with SFMNP per 1000 people (2016) 0.004052296363231135
-Public transportation proportion 0.036240310077519385
-Proportion of public transit to work under 30 minutes 0.2832832832832833
-Affordable housing in market normalized 0.013952136420889449
+Score: -1.05	GeoID: 3645106	Place Name: Manorhaven village, New York	Affiliate Status: False
+Job features 2.615359808501851
++ Economic features 1.0628529261685962
+- Economic features -0.029809740384118127
+Food features -0.46346315153859763
+Transit features 0.22915555931751141
+Housing features -1.0544989554266044
+Education features 1.4935644003312336
+Diversity features 0.6427687658036104
+Indeed job count normalized 0.11000452693526484
+Employment to population ratio percentage 0.603
+Employment Rate Prediction 0.44552376712971975
+Number of people below the poverty level normalized 0.08239022181982797
+Unemployment rate percentage 0.059000000000000004
+SNAP-authorized Stores per 1000 people (2016) 0.0
+Farmers Markets per 1000 people (2016) 0.0
+Farmer Markets with SNAP per 1000 people (2016) 0.0
+Farmer Markets with WIC per 1000 people (2016) 0.0
+Farmer Markets with WIC Cash per 1000 people (2016) 0.0
+Farmer Markets with SFMNP per 1000 people (2016) 0.0
+Public transportation proportion 0.22390376406674428
+Proportion of public transit to work under 30 minutes 0.052000000000000005
+Affordable housing in market normalized 0.008752074845329711
 Craigslist affordable house count normalized 0.0
-Number of people with a bachelors degree or higher normalized 0.1719794593547137
-Simpsons diversity score 0.4172684405921452
+Number of people with a bachelors degree or higher normalized 0.2904783461596499
+Simpsons diversity score 0.4068514499179641
 
-Score: -0.06	GeoID: 2769700	Place Name: West St. Paul city, Minnesota	Affiliate Status: False
-Job features 0.8202405106954216
-+ Economic features 0.48597032157403697
-- Economic features 0.31989106755624264
-Food features 0.017998901798660673
-Transit features 0.6133583573407574
-Housing features 0.11005731327890829
-Education features -0.06172260505063336
-Diversity features 0.4777886806440113
-Indeed job count normalized 0.03620253164556962
+Score: -1.07	GeoID: 3471220	Place Name: Stratford borough, New Jersey	Affiliate Status: False
+Job features 3.7832736249088468
++ Economic features 0.9777587518599984
+- Economic features -0.13569418526865196
+Food features -0.46346315153859763
+Transit features -0.6749208662336477
+Housing features -1.0746245831494823
+Education features 0.3432704510232829
+Diversity features 0.012382447507114529
+Indeed job count normalized 0.1399059695113264
 Employment to population ratio percentage 0.633
-Number of people below the poverty level normalized 0.05281012658227848
-Unemployment rate 6.3
-SNAP-authorized Stores per 1000 people (2016) 0.795600827
-Farmers Markets per 1000 people (2016) 0.01485842
-Farmer Markets with SNAP per 1000 people (2016) 0.009455358182358488
-Farmer Markets with WIC per 1000 people (2016) 0.004052296363231135
-Farmer Markets with WIC Cash per 1000 people (2016) 0.004052296363231135
-Farmer Markets with SFMNP per 1000 people (2016) 0.004052296363231135
-Public transportation proportion 0.07017153040766318
-Proportion of public transit to work under 30 minutes 0.6826826826826827
-Affordable housing in market normalized 0.011949367088607594
+Employment Rate Prediction 0.4200033412741713
+Number of people below the poverty level normalized 0.06282946288645108
+Unemployment rate percentage 0.08800000000000001
+SNAP-authorized Stores per 1000 people (2016) 0.0
+Farmers Markets per 1000 people (2016) 0.0
+Farmer Markets with SNAP per 1000 people (2016) 0.0
+Farmer Markets with WIC per 1000 people (2016) 0.0
+Farmer Markets with WIC Cash per 1000 people (2016) 0.0
+Farmer Markets with SFMNP per 1000 people (2016) 0.0
+Public transportation proportion 0.12571756601607348
+Proportion of public transit to work under 30 minutes 0.6919999999999998
+Affordable housing in market normalized 0.008405755805670323
 Craigslist affordable house count normalized 0.0
-Number of people with a bachelors degree or higher normalized 0.1629873417721519
-Simpsons diversity score 0.3778299697004501
+Number of people with a bachelors degree or higher normalized 0.17880039891722468
+Simpsons diversity score 0.2941651058803142
 
-Score: -0.10	GeoID: 1725141	Place Name: Fairview Heights city, Illinois	Affiliate Status: False
-Job features GeoID
-1725141    1.670167
-1725141    1.670167
-Name: Job features, dtype: float64
-+ Economic features GeoID
-1725141    0.463435
-1725141    0.463435
-Name: + Economic features, dtype: float64
-- Economic features GeoID
-1725141    0.326856
-1725141    0.326856
-Name: - Economic features, dtype: float64
-Food features GeoID
-1725141    0.270193
-1725141    0.270193
-Name: Food features, dtype: float64
-Transit features GeoID
-1725141   -0.09942
-1725141   -0.09942
-Name: Transit features, dtype: float64
-Housing features GeoID
-1725141    0.269017
-1725141    0.269017
-Name: Housing features, dtype: float64
-Education features GeoID
-1725141    0.303482
-1725141    0.303482
-Name: Education features, dtype: float64
-Diversity features GeoID
-1725141    0.977058
-1725141    0.977058
-Name: Diversity features, dtype: float64
-Indeed job count normalized GeoID
-1725141    0.05694
-1725141    0.05694
-Name: Indeed job count normalized, dtype: float64
-Employment to population ratio percentage GeoID
-1725141    0.631
-1725141    0.631
-Name: Employment to population ratio percentage, dtype: float64
-Number of people below the poverty level normalized GeoID
-1725141    0.059111
-1725141    0.059111
-Name: Number of people below the poverty level normalized, dtype: float64
-Unemployment rate GeoID
-1725141    5.6
-1725141    5.6
-Name: Unemployment rate, dtype: float64
-SNAP-authorized Stores per 1000 people (2016) GeoID
-1725141    0.366832
-1725141    0.366832
-Name: SNAP-authorized Stores per 1000 people (2016), dtype: float64
-Farmers Markets per 1000 people (2016) GeoID
-1725141    0.109593
-1725141    0.109593
-Name: Farmers Markets per 1000 people (2016), dtype: float64
-Farmer Markets with SNAP per 1000 people (2016) GeoID
-1725141    0.018266
-1725141    0.018266
-Name: Farmer Markets with SNAP per 1000 people (2016), dtype: float64
-Farmer Markets with WIC per 1000 people (2016) GeoID
-1725141    0.0
-1725141    0.0
-Name: Farmer Markets with WIC per 1000 people (2016), dtype: float64
-Farmer Markets with WIC Cash per 1000 people (2016) GeoID
-1725141    0.0
-1725141    0.0
-Name: Farmer Markets with WIC Cash per 1000 people (2016), dtype: float64
-Farmer Markets with SFMNP per 1000 people (2016) GeoID
-1725141    0.0
-1725141    0.0
-Name: Farmer Markets with SFMNP per 1000 people (2016), dtype: float64
-Public transportation proportion GeoID
-1725141    0.026958
-1725141    0.026958
-Name: Public transportation proportion, dtype: float64
-Proportion of public transit to work under 30 minutes GeoID
-1725141    0.43956
-1725141    0.43956
-Name: Proportion of public transit to work under 30 minutes, dtype: float64
-Affordable housing in market normalized GeoID
-1725141    0.014416
-1725141    0.014416
-Name: Affordable housing in market normalized, dtype: float64
-Craigslist affordable house count normalized GeoID
-1725141    0.000362
-1725141    0.000362
-Name: Craigslist affordable house count normalized, dtype: float64
-Number of people with a bachelors degree or higher normalized GeoID
-1725141    0.197961
-1725141    0.197961
-Name: Number of people with a bachelors degree or higher normalized, dtype: float64
-Simpsons diversity score GeoID
-1725141    0.466343
-1725141    0.466343
-Name: Simpsons diversity score, dtype: float64
+Score: -1.10	GeoID: 4971070	Place Name: South Salt Lake city, Utah	Affiliate Status: False
+Job features -0.4347258667473789
++ Economic features 0.3469205516420152
+- Economic features -0.45901263157896344
+Food features 0.24122319056833347
+Transit features -0.7925928188275928
+Housing features -1.1047296846901349
+Education features 0.03024964833123911
+Diversity features 1.2541083779738045
+Indeed job count normalized 0.031914893617021274
+Employment to population ratio percentage 0.65
+Employment Rate Prediction 0.3532673476709655
+Number of people below the poverty level normalized 0.12244155003640482
+Unemployment rate percentage 0.052000000000000005
+SNAP-authorized Stores per 1000 people (2016) 0.6670351370000001
+Farmers Markets per 1000 people (2016) 0.021139622
+Farmer Markets with SNAP per 1000 people (2016) 0.00787931365396892
+Farmer Markets with WIC per 1000 people (2016) 0.0015374270546031075
+Farmer Markets with WIC Cash per 1000 people (2016) 0.0007687135271958563
+Farmer Markets with SFMNP per 1000 people (2016) 0.0032670324899481988
+Public transportation proportion 0.11388116747741488
+Proportion of public transit to work under 30 minutes 0.7537537537537539
+Affordable housing in market normalized 0.007887711350214384
+Craigslist affordable house count normalized 0.0
+Number of people with a bachelors degree or higher normalized 0.14841032278941832
+Simpsons diversity score 0.5161330505196644
 
-Score: -0.10	GeoID: 1725141	Place Name: Fairview Heights city, Illinois	Affiliate Status: False
-Job features GeoID
-1725141    1.670167
-1725141    1.670167
-Name: Job features, dtype: float64
-+ Economic features GeoID
-1725141    0.463435
-1725141    0.463435
-Name: + Economic features, dtype: float64
-- Economic features GeoID
-1725141    0.326856
-1725141    0.326856
-Name: - Economic features, dtype: float64
-Food features GeoID
-1725141    0.270193
-1725141    0.270193
-Name: Food features, dtype: float64
-Transit features GeoID
-1725141   -0.09942
-1725141   -0.09942
-Name: Transit features, dtype: float64
-Housing features GeoID
-1725141    0.269017
-1725141    0.269017
-Name: Housing features, dtype: float64
-Education features GeoID
-1725141    0.303482
-1725141    0.303482
-Name: Education features, dtype: float64
-Diversity features GeoID
-1725141    0.977058
-1725141    0.977058
-Name: Diversity features, dtype: float64
-Indeed job count normalized GeoID
-1725141    0.05694
-1725141    0.05694
-Name: Indeed job count normalized, dtype: float64
-Employment to population ratio percentage GeoID
-1725141    0.631
-1725141    0.631
-Name: Employment to population ratio percentage, dtype: float64
-Number of people below the poverty level normalized GeoID
-1725141    0.059111
-1725141    0.059111
-Name: Number of people below the poverty level normalized, dtype: float64
-Unemployment rate GeoID
-1725141    5.6
-1725141    5.6
-Name: Unemployment rate, dtype: float64
-SNAP-authorized Stores per 1000 people (2016) GeoID
-1725141    0.366832
-1725141    0.366832
-Name: SNAP-authorized Stores per 1000 people (2016), dtype: float64
-Farmers Markets per 1000 people (2016) GeoID
-1725141    0.109593
-1725141    0.109593
-Name: Farmers Markets per 1000 people (2016), dtype: float64
-Farmer Markets with SNAP per 1000 people (2016) GeoID
-1725141    0.018266
-1725141    0.018266
-Name: Farmer Markets with SNAP per 1000 people (2016), dtype: float64
-Farmer Markets with WIC per 1000 people (2016) GeoID
-1725141    0.0
-1725141    0.0
-Name: Farmer Markets with WIC per 1000 people (2016), dtype: float64
-Farmer Markets with WIC Cash per 1000 people (2016) GeoID
-1725141    0.0
-1725141    0.0
-Name: Farmer Markets with WIC Cash per 1000 people (2016), dtype: float64
-Farmer Markets with SFMNP per 1000 people (2016) GeoID
-1725141    0.0
-1725141    0.0
-Name: Farmer Markets with SFMNP per 1000 people (2016), dtype: float64
-Public transportation proportion GeoID
-1725141    0.026958
-1725141    0.026958
-Name: Public transportation proportion, dtype: float64
-Proportion of public transit to work under 30 minutes GeoID
-1725141    0.43956
-1725141    0.43956
-Name: Proportion of public transit to work under 30 minutes, dtype: float64
-Affordable housing in market normalized GeoID
-1725141    0.014416
-1725141    0.014416
-Name: Affordable housing in market normalized, dtype: float64
-Craigslist affordable house count normalized GeoID
-1725141    0.000362
-1725141    0.000362
-Name: Craigslist affordable house count normalized, dtype: float64
-Number of people with a bachelors degree or higher normalized GeoID
-1725141    0.197961
-1725141    0.197961
-Name: Number of people with a bachelors degree or higher normalized, dtype: float64
-Simpsons diversity score GeoID
-1725141    0.466343
-1725141    0.466343
-Name: Simpsons diversity score, dtype: float64
+Score: -1.11	GeoID: 2404050	Place Name: Baltimore Highlands CDP, Maryland	Affiliate Status: False
+Job features 0.9880350764065804
++ Economic features 0.6748921366919213
+- Economic features -0.4759501733318977
+Food features -0.46346315153859763
+Transit features -1.1111066420791862
+Housing features -0.03442580575972709
+Education features -0.8979494079357628
+Diversity features 1.1665521456585022
+Indeed job count normalized 0.0683410442828817
+Employment to population ratio percentage 0.682
+Employment Rate Prediction 0.36361617436134375
+Number of people below the poverty level normalized 0.10746860541969597
+Unemployment rate percentage 0.069
+SNAP-authorized Stores per 1000 people (2016) 0.0
+Farmers Markets per 1000 people (2016) 0.0
+Farmer Markets with SNAP per 1000 people (2016) 0.0
+Farmer Markets with WIC per 1000 people (2016) 0.0
+Farmer Markets with WIC Cash per 1000 people (2016) 0.0
+Farmer Markets with SFMNP per 1000 people (2016) 0.0
+Public transportation proportion 0.09307418560087599
+Proportion of public transit to work under 30 minutes 0.6643356643356643
+Affordable housing in market normalized 0.026305353602115004
+Craigslist affordable house count normalized 0.0
+Number of people with a bachelors degree or higher normalized 0.05829477858559154
+Simpsons diversity score 0.5004817087456477
+
+Score: -1.12	GeoID: 4202288	Place Name: Ambridge borough, Pennsylvania	Affiliate Status: False
+Job features 3.499576779873121
++ Economic features 0.706593354744061
+- Economic features -0.5300126332066578
+Food features -0.46346315153859763
+Transit features -1.097650093492731
+Housing features -1.12215158386799
+Education features -0.6822592222738492
+Diversity features 0.43532712030296344
+Indeed job count normalized 0.1326426382606158
+Employment to population ratio percentage 0.578
+Employment Rate Prediction 0.4284635666983831
+Number of people below the poverty level normalized 0.10783598424047862
+Unemployment rate percentage 0.073
+SNAP-authorized Stores per 1000 people (2016) 0.0
+Farmers Markets per 1000 people (2016) 0.0
+Farmer Markets with SNAP per 1000 people (2016) 0.0
+Farmer Markets with WIC per 1000 people (2016) 0.0
+Farmer Markets with WIC Cash per 1000 people (2016) 0.0
+Farmer Markets with SFMNP per 1000 people (2016) 0.0
+Public transportation proportion 0.09645343056015908
+Proportion of public transit to work under 30 minutes 0.611
+Affordable housing in market normalized 0.0075879177002772516
+Craigslist affordable house count normalized 0.0
+Number of people with a bachelors degree or higher normalized 0.07923537137020283
+Simpsons diversity score 0.3697696796539916
+
+Score: -1.13	GeoID: 3474630	Place Name: Union City city, New Jersey	Affiliate Status: False
+Job features -1.1268566481287805
++ Economic features 0.42348976790724496
+- Economic features -0.7089714472282673
+Food features 0.027256982039695288
+Transit features 4.208824979568607
+Housing features -0.9238362164238488
+Education features -0.20938521804032317
+Diversity features 0.7099977386251692
+Indeed job count normalized 0.014194657308601304
+Employment to population ratio percentage 0.637
+Employment Rate Prediction 0.3678877715234099
+Number of people below the poverty level normalized 0.12365537491942992
+Unemployment rate percentage 0.071
+SNAP-authorized Stores per 1000 people (2016) 0.61137151
+Farmers Markets per 1000 people (2016) 0.0
+Farmer Markets with SNAP per 1000 people (2016) 0.0
+Farmer Markets with WIC per 1000 people (2016) 0.0
+Farmer Markets with WIC Cash per 1000 people (2016) 0.0
+Farmer Markets with SFMNP per 1000 people (2016) 0.0
+Public transportation proportion 0.5099520950003373
+Proportion of public transit to work under 30 minutes 0.5735735735735736
+Affordable housing in market normalized 0.011000501324930172
+Craigslist affordable house count normalized 0.0
+Number of people with a bachelors degree or higher normalized 0.1251450261405142
+Simpsons diversity score 0.41886913961202377
 

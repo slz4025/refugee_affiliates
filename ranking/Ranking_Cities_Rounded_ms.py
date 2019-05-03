@@ -7,43 +7,32 @@
 ## also takes min 
 ##
 
-
 import numpy as np
 import pandas as pd
 
-
-# In[43]:
-
-
 # city features
-#city_data = pd.read_csv('./merged_city_data_normalized_with_employment.csv').set_index('GeoID')
-# incomplete dataset, but has place names
-city_data = pd.read_csv('./merged_city_data_normalized.tsv',
-        sep='\t')#.set_index('GeoID')
-city_data = city_data.drop_duplicates()
+city_data = pd.read_csv('./merged_city_data_normalized_with_employment.csv')
 place_map = pd.Series(city_data['Place Name'].values,
         index=city_data['GeoID']).to_dict()
 city_data = city_data.set_index('GeoID')
 # affiliate cities and their geoids
 aff_cities = pd.read_csv('./Affiliate-City-to-Id2.csv', names=['Place Name',
-    'GeoID']) #.set_index('GeoID')
+    'GeoID'])
 aff_map = pd.Series(aff_cities['Place Name'].values,
     index=aff_cities['GeoID']).to_dict()
-
-# TODO include population in ranking
 
 job_features = [
     ('Indeed job count normalized', 1)
 ]
 
 pos_economic_features = [
-    ('Employment to population ratio percentage', 1)#,
-    #('Employment Rate Prediction', 0.4)
+    ('Employment to population ratio percentage', 0.6),
+    ('Employment Rate Prediction', 0.4)
 ]
 
 neg_economic_features = [
     ('Number of people below the poverty level normalized', 0.6),
-    ('Unemployment rate', 0.4)
+    ('Unemployment rate percentage', 0.4)
 ]
 
 food_features = [
@@ -56,8 +45,8 @@ food_features = [
 ]
 
 transit_features = [
-    ('Public transportation proportion', 0.85),
-    ('Proportion of public transit to work under 30 minutes', 0.15)
+    ('Public transportation proportion', .8),
+    ('Proportion of public transit to work under 30 minutes', .2)
 ]
 
 housing_features = [
@@ -73,10 +62,6 @@ diversity_features = [
     ('Simpsons diversity score',1),
 ]
 
-# TODO
-city_data['Affordable housing in market normalized'] = \
-        city_data['Affordable housing in market'] / city_data['Population']
-
 all_features = job_features + pos_economic_features + neg_economic_features\
         + food_features + transit_features + housing_features\
         + education_features + diversity_features
@@ -88,10 +73,15 @@ classes = {"Job features":job_features,\
            "Housing features":housing_features,\
            "Education features":education_features,\
            "Diversity features":diversity_features}
+neg_feature_names = [n[0] for n in neg_economic_features]
+pos_feature_names = [p[0] for p in \
+        set(all_features).difference(set(neg_feature_names))]
 
-# turn nans to 0 
-# may cause issues with neg features!!!
-city_data = city_data.fillna(0)
+# turn nans in positive features to 0 (standard minimum) 
+city_data[pos_feature_names] = city_data[pos_feature_names].fillna(0)
+# turn nans in negative features to the maximum (the greater, the worse)
+city_data[neg_feature_names] = city_data[neg_feature_names]\
+        .fillna(city_data[neg_feature_names].max())
 
 # compute z-score for each feature
 for f,s in all_features:
@@ -104,22 +94,11 @@ for c in classes:
 
 # negate
 city_data["- Economic features"] = -1 * city_data["- Economic features"]
-        
 
-# weighing
-job_weight = 2 # high
-pos_economic_weight = 1
-neg_economic_weight = -1
-food_weight = 1
-transit_weight = 1
-housing_weight = 2 # high
-education_weight = 1
-diversity_weight = 1
-
-# how much more likely will housing and jobs be the minimum
-city_data["Job features"] -= 0.5
-city_data["Housing features"] -= 0.5
-city_data["Transit features"] -= 0.5
+# weighing, make more important features more likely to be the minimum
+city_data["Job features"] -= 1#0.5
+city_data["Housing features"] -= 1#0.5
+city_data["Transit features"] -= 2#0.5
 city_data["Food features"] += 0.25
 city_data["Education features"] += 0.25
 
@@ -133,7 +112,6 @@ to_display = 10
 for geoid, score in city_scores[:to_display].iteritems():
     print("Score: {:.2f}\tGeoID: {}\tPlace Name: {}\tAffiliate Status: {}"\
     .format(score, geoid, place_map[geoid], geoid in aff_map))
-    #print(city_data.loc[geoid,:])
     for c in classes:
         print(c, city_data.loc[geoid][c])
     for f,s in all_features:

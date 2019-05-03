@@ -1,0 +1,6 @@
+Ranking Files
+
+Ranking_Cities_uniform: uniform weighted sum
+Ranking_Cities_Classes: weighted sum, split by feature groups
+Ranking_Cities_Rounded: minimum over min_max normalized average by each feature group
+Ranking_Cities_Rounded_ms: minimum, z-score with weighted sum in feature groups

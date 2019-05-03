@@ -6,30 +6,20 @@
 ## Takes min 
 ##
 
-
 import numpy as np
 import pandas as pd
 
-
-# In[43]:
-
-
 # city features
 city_data = pd.read_csv('./merged_city_data_normalized_with_employment.csv').set_index('GeoID')
-# incomplete dataset, but has place names
 city_data_with_names = pd.read_csv('./merged_city_data_normalized.tsv',
-        sep='\t')#.set_index('GeoID')
-#city_data_with_names = city_data_with_names.groupby(city_data_with_names.index).first()
-#print(list(city_data_with_names.columns.values))
+        sep='\t')
 place_map = pd.Series(city_data_with_names['Place Name'].values,
         index=city_data_with_names['GeoID']).to_dict()
 # affiliate cities and their geoids
 aff_cities = pd.read_csv('./Affiliate-City-to-Id2.csv', names=['Place Name',
-    'GeoID']) #.set_index('GeoID')
+    'GeoID'])
 aff_map = pd.Series(aff_cities['Place Name'].values,
     index=aff_cities['GeoID']).to_dict()
-
-# TODO include population in ranking
 
 job_features = [
     'Indeed job count normalized min_max_normalized'
@@ -125,7 +115,6 @@ to_display = 10
 for geoid, score in city_scores[:to_display].iteritems():
     print("Score: {:.2f}\tGeoID: {}\tPlace Name: {}\tAffiliate Status: {}"\
     .format(score, geoid, place_map[geoid], geoid in aff_map))
-    #print(city_data.loc[geoid,:])
     print("job",job_mean.loc[geoid])
     print("+ec",pos_economic_mean.loc[geoid])
     print("-ec",neg_economic_mean.loc[geoid])
